@@ -1,0 +1,91 @@
+<!--
+  https://developers.arcgis.com/javascript/latest/sample-code/intro-layers/index.html
+-->
+
+    <!--
+//https://developers.arcgis.com/javascript/latest/sample-code/request/index.html
+      ArcGIS API for JavaScript, https://js.arcgis.com
+  For more information about the widgets-track-basic sample, read the original sample description at developers.arcgis.com.
+  https://developers.arcgis.com/javascript/latest/sample-code/widgets-track-basic/index.html
+  -->
+
+
+    <div id="info">
+      <div>
+        <h2 class="text-center">#AGUAGT</h2>
+        <h2 class="text-center">#SOSAGUAGT</h2>
+      </div>
+      <button id="Point" class="btn btn-info text-center" onclick="unhide('infoForm')">
+        Reportar Problema
+      </button>
+      <!-- <button id="Point" class ="btn btn-info">Cubo 2</button>
+      <button id="Point" class ="btn btn-info">Cubo 3</button> -->
+    </div>
+
+    <div id="infoForm" >
+      <h2>Reporte de Problema</h2>
+      <!-- <button id="Point" class ="btn btn-info text-center" onclick="hide()">Reportar Problema</button> -->
+      <!-- <form  class="form-container"> -->
+        <!-- <label for="email"><b>Email</b></label> -->
+        <input
+          id ="email"
+          type="text"
+          placeholder="Ingrese Email"
+          name="email"
+        /><br /><br/>
+
+        <input
+          id ="nombre"
+          type="text"
+          placeholder="Ingrese Nombre"
+          name="nombre"
+        /><br /><br/>
+
+        <label for="lnecesidad"><b>Necesidad</b></label>
+        <select id="selectNecesidad">
+          <option></option>
+        </select></br>
+
+        <label for="ldepartamento"><b>Departamento</b></label>
+        <select id="selectDepartamento" onchange="cargaMuni()">
+          <option></option>
+        </select></br>
+
+        <label for="lmunicipio"><b>Municipio</b></label>
+        <select id="selectMunicipio"  >
+          <option></option>
+        </select></br>
+
+        <textarea
+          id ="txt" 
+          type="text"
+          placeholder="Ingrese Problema"
+          name="txt"
+          rows="3"
+          cols="40"
+        ></textarea
+        ><br /><br/>
+
+        <button type="submit" class="btn btn-info text-center" onclick="postData()">Reportar</button>&nbsp;
+        <button type="submit" class="btn btn-danger text-center" onclick="hide('infoForm')">
+          X
+        </button>
+      <!-- </form> -->
+    </div>
+
+    <div id="infoRegion">
+      <div>
+        <h3 id = "tableTitle" class="text-center"></h3>
+      </div>
+
+      <table id="tableInfo" class="table table-striped">
+      </table>
+      <br>
+      
+      <button id="Point" class="btn btn-danger text-center" onclick="hide('infoRegion')">
+        X
+      </button>
+    </div>
+
+    <div id="viewDiv"></div>
+<!--herlich steven gonzalez zambrano 2020-->

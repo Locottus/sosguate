@@ -1,0 +1,341 @@
+id,objectid,shape,cod_pais,pais,cod_depto,departamento,departamen_1,municipio,municipi_1,codigo,orig_fid,point_x,point_y
+1,1,Point,GT,Guatemala,GT04,Chimaltenango,Chimaltenango,Acatenango,Acatenango,411,1,-90.956307,14.547826
+2,2,Point,GT,Guatemala,GT22,Jutiapa,Jutiapa,Agua Blanca,Agua Blanca,2204,2,-89.599949,14.458206
+3,3,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,Aguacatán,Aguacatan,1327,3,-91.213843,15.333277
+4,4,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,Almolonga,Almolonga,913,4,-91.484486,14.811737
+5,5,Point,GT,Guatemala,GT03,Sacatepéquez,Sacatepequez,Alotenango,Alotenango,314,5,-90.819675,14.459525
+6,6,Point,GT,Guatemala,GT01,Guatemala,Guatemala,Amatitlán,Amatitlan,114,6,-90.611901,14.453492
+7,7,Point,GT,Guatemala,GT03,Sacatepéquez,Sacatepequez,Antigua Guatemala,Antigua Guatemala,301,7,-90.725407,14.545494
+8,8,Point,GT,Guatemala,GT22,Jutiapa,Jutiapa,Asunción Mita,Asuncion Mita,2205,8,-89.667383,14.298936
+9,9,Point,GT,Guatemala,GT22,Jutiapa,Jutiapa,Atescatempa,Atescatempa,2207,9,-89.727174,14.175074
+10,10,Point,GT,Guatemala,GT12,San Marcos,San Marcos,Ayutla,Ayutla,1217,10,-92.097562,14.766969
+11,11,Point,GT,Guatemala,GT06,Santa Rosa,Santa Rosa,Barberena,Barberena,602,11,-90.414661,14.305583
+12,12,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,Barillas,Barillas,1326,12,-91.221094,15.931652
+13,13,Point,GT,Guatemala,GT19,Zacapa,Zacapa,Cabañas,Cabanas,1907,13,-89.776647,14.885095
+14,14,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,Cabricán,Cabrican,906,14,-91.649192,15.103974
+15,15,Point,GT,Guatemala,GT16,Alta Verapaz,Alta Verapaz,Cahabón,Cahabon,1612,15,-89.845873,15.611119
+16,16,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,Cajolá,Cajola,907,16,-91.612966,14.935075
+17,17,Point,GT,Guatemala,GT20,Chiquimula,Chiquimula,Camotán,Camotan,2005,17,-89.278679,14.841723
+18,18,Point,GT,Guatemala,GT14,Quiché,Quiche,Canillá,Canilla,1418,18,-90.8641,15.196217
+19,19,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,Cantel,Cantel,914,19,-91.439683,14.816648
+20,20,Point,GT,Guatemala,GT06,Santa Rosa,Santa Rosa,Casillas,Casillas,604,20,-90.170286,14.374304
+21,21,Point,GT,Guatemala,GT12,San Marcos,San Marcos,Catarina,Catarina,1216,21,-92.070046,14.846853
+22,22,Point,GT,Guatemala,GT16,Alta Verapaz,Alta Verapaz,Chahal,Chahal,1614,22,-89.576287,15.732912
+23,23,Point,GT,Guatemala,GT14,Quiché,Quiche,Chajul,Chajul,1405,23,-90.992759,15.589325
+24,24,Point,GT,Guatemala,GT11,Retalhuleu,Retalhuleu,Champerico,Champerico,1107,24,-91.884059,14.348886
+25,25,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,Chiantla,Chiantla,1302,25,-91.407925,15.503126
+26,26,Point,GT,Guatemala,GT10,Suchitepéquez,Suchitepequez,Chicacao,Chicacao,1013,26,-91.306803,14.54734
+27,27,Point,GT,Guatemala,GT14,Quiché,Quiche,Chicamán,Chicaman,1419,27,-90.576323,15.294858
+28,28,Point,GT,Guatemala,GT14,Quiché,Quiche,Chiché,Chiche,1402,28,-91.04489,15.011277
+29,29,Point,GT,Guatemala,GT14,Quiché,Quiche,Chichicastenango,Chichicastenango,1406,29,-91.092096,14.897134
+30,30,Point,GT,Guatemala,GT04,Chimaltenango,Chimaltenango,Chimaltenango,Chimaltenango,401,30,-90.840952,14.677595
+31,31,Point,GT,Guatemala,GT01,Guatemala,Guatemala,Chinautla,Chinautla,106,31,-90.497619,14.727333
+32,32,Point,GT,Guatemala,GT14,Quiché,Quiche,Chinique,Chinique,1403,32,-91.022072,15.072704
+33,33,Point,GT,Guatemala,GT20,Chiquimula,Chiquimula,Chiquimula,Chiquimula,2001,33,-89.579073,14.802997
+34,34,Point,GT,Guatemala,GT06,Santa Rosa,Santa Rosa,Chiquimulilla,Chiquimulilla,608,34,-90.33485,13.972986
+35,35,Point,GT,Guatemala,GT16,Alta Verapaz,Alta Verapaz,Chisec,Chisec,1613,35,-90.36783,15.913765
+36,36,Point,GT,Guatemala,GT01,Guatemala,Guatemala,Chuarrancho,Chuarrancho,112,36,-90.472455,14.853176
+37,37,Point,GT,Guatemala,GT03,Sacatepéquez,Sacatepequez,Ciudad Vieja,Ciudad Vieja,312,37,-90.77352,14.506387
+38,38,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,Coatepeque,Coatepeque,920,38,-91.979168,14.641367
+39,39,Point,GT,Guatemala,GT16,Alta Verapaz,Alta Verapaz,Cobán,Coban,1601,39,-90.540278,15.710788
+40,40,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,Colomba,Colomba,917,40,-91.754244,14.707709
+41,41,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,Colotenango,Colotenango,1319,41,-91.711276,15.445163
+42,42,Point,GT,Guatemala,GT04,Chimaltenango,Chimaltenango,Comalapa,Comalapa,404,42,-90.89867,14.749103
+43,43,Point,GT,Guatemala,GT22,Jutiapa,Jutiapa,Comapa,Comapa,2211,43,-89.91152,14.115557
+44,44,Point,GT,Guatemala,GT12,San Marcos,San Marcos,Comitancillo,Comitancillo,1204,44,-91.746439,15.111052
+45,45,Point,GT,Guatemala,GT07,Sololá,Solola,Concepción,Concepcion,708,45,-91.135129,14.782281
+46,46,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,Concepción Chiquirichapa,Concepcion Chiquirichapa,911,46,-91.619664,14.844849
+47,47,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,Concepción Huista,Concepcion Huista,1322,47,-91.640552,15.66515
+48,48,Point,GT,Guatemala,GT20,Chiquimula,Chiquimula,Concepción Las Minas,Concepcion Las Minas,2008,48,-89.44926,14.487688
+49,49,Point,GT,Guatemala,GT12,San Marcos,San Marcos,Concepción Tutuapa,Concepcion Tutuapa,1206,49,-91.869047,15.290435
+50,50,Point,GT,Guatemala,GT22,Jutiapa,Jutiapa,Conguaco,Conguaco,2213,50,-90.016291,14.009939
+51,51,Point,GT,Guatemala,GT15,Baja Verapaz,Baja Verapaz,Cubulco,Cubulco,1504,51,-90.671283,15.155377
+52,52,Point,GT,Guatemala,GT06,Santa Rosa,Santa Rosa,Cuilapa,Cuilapa,601,52,-90.298894,14.263306
+53,53,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,Cuilco,Cuilco,1304,53,-91.962378,15.465105
+54,54,Point,GT,Guatemala,GT14,Quiché,Quiche,Cunén,Cunen,1410,54,-91.0182,15.366076
+55,55,Point,GT,Guatemala,GT10,Suchitepéquez,Suchitepequez,Cuyotenango,Cuyotenango,1002,55,-91.564101,14.488291
+56,56,Point,GT,Guatemala,GT17,Petén,Peten,Dolores,Dolores,1708,56,-89.359894,16.579843
+57,57,Point,GT,Guatemala,GT22,Jutiapa,Jutiapa,El Adelanto,El Adelanto,2209,57,-89.853068,14.175033
+58,58,Point,GT,Guatemala,GT11,Retalhuleu,Retalhuleu,El Asintal,El Asintal,1109,58,-91.756624,14.549615
+59,59,Point,GT,Guatemala,GT17,Petén,Peten,El Chal,El Chal,1714,59,-89.733793,16.525741
+60,60,Point,GT,Guatemala,GT15,Baja Verapaz,Baja Verapaz,El Chol,El Chol,1506,60,-90.487302,14.953573
+61,61,Point,GT,Guatemala,GT18,Izabal,Izabal,El Estor,El Estor,1803,61,-89.363085,15.363584
+62,62,Point,GT,Guatemala,GT02,El Progreso,El Progreso,El Jícaro,El Jicaro,205,62,-89.916008,14.88843
+63,63,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,El Palmar,El Palmar,919,63,-91.608161,14.69868
+64,64,Point,GT,Guatemala,GT22,Jutiapa,Jutiapa,El Progreso,El Progreso,2202,64,-89.850194,14.378814
+65,65,Point,GT,Guatemala,GT12,San Marcos,San Marcos,El Quetzal,El Quetzal,1220,65,-91.805347,14.774578
+66,66,Point,GT,Guatemala,GT12,San Marcos,San Marcos,El Rodeo,El Rodeo,1214,66,-91.998493,14.887963
+67,67,Point,GT,Guatemala,GT04,Chimaltenango,Chimaltenango,El Tejar,El Tejar,416,67,-90.788764,14.67566
+68,68,Point,GT,Guatemala,GT12,San Marcos,San Marcos,El Tumbador,El Tumbador,1213,68,-91.94727,14.847663
+69,69,Point,GT,Guatemala,GT05,Escuintla,Escuintla,Escuintla,Escuintla,501,69,-90.79321,14.299788
+70,70,Point,GT,Guatemala,GT20,Chiquimula,Chiquimula,Esquipulas,Esquipulas,2007,70,-89.267078,14.62059
+71,71,Point,GT,Guatemala,GT12,San Marcos,San Marcos,Esquipulas Palo Gordo,Esquipulas Palo Gordo,1227,71,-91.845878,14.925888
+72,72,Point,GT,Guatemala,GT19,Zacapa,Zacapa,Estanzuela,Estanzuela,1902,72,-89.612764,14.979249
+73,73,Point,GT,Guatemala,GT17,Petén,Peten,Flores,Flores,1701,73,-89.534617,17.370037
+74,74,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,Flores Costa Cuca,Flores Costa Cuca,922,74,-91.863421,14.633276
+75,75,Point,GT,Guatemala,GT01,Guatemala,Guatemala,Fraijanes,Fraijanes,113,75,-90.441792,14.469343
+76,76,Point,GT,Guatemala,GT16,Alta Verapaz,Alta Verapaz,Fray Bartolomé de Las Casas,Fray Bartolome de Las Casas,1615,76,-89.760948,15.822901
+77,77,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,Génova,Genova,921,77,-91.845208,14.566477
+78,78,Point,GT,Guatemala,GT15,Baja Verapaz,Baja Verapaz,Granados,Granados,1505,78,-90.57543,14.936253
+79,79,Point,GT,Guatemala,GT19,Zacapa,Zacapa,Gualán,Gualan,1904,79,-89.30243,15.146822
+80,80,Point,GT,Guatemala,GT05,Escuintla,Escuintla,Guanagazapa,Guanagazapa,508,80,-90.671756,14.091562
+81,81,Point,GT,Guatemala,GT02,El Progreso,El Progreso,Guastatoya,Guastatoya,201,81,-90.063618,14.85134
+82,82,Point,GT,Guatemala,GT01,Guatemala,Guatemala,Guatemala,Guatemala,101,82,-90.479418,14.635431
+83,83,Point,GT,Guatemala,GT06,Santa Rosa,Santa Rosa,Guazacapán,Guazacapan,611,83,-90.430048,14.023993
+84,84,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,Huehuetenango,Huehuetenango,1301,84,-91.346808,15.291573
+85,85,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,Huitán,Huitan,915,85,-91.627664,15.046154
+86,86,Point,GT,Guatemala,GT19,Zacapa,Zacapa,Huité,Huite,1910,86,-89.697663,14.918179
+87,87,Point,GT,Guatemala,GT20,Chiquimula,Chiquimula,Ipala,Ipala,2011,87,-89.608276,14.587532
+88,88,Point,GT,Guatemala,GT14,Quiché,Quiche,Ixcán,Ixcan,1420,88,-90.867343,15.927869
+89,89,Point,GT,Guatemala,GT12,San Marcos,San Marcos,Ixchiguán,Ixchiguan,1223,89,-91.922454,15.151675
+90,90,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,Ixtahuacán,Ixtahuacan,1309,90,-91.804915,15.414954
+91,91,Point,GT,Guatemala,GT05,Escuintla,Escuintla,Iztapa,Iztapa,510,91,-90.698958,13.96278
+92,92,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,Jacaltenango,Jacaltenango,1307,92,-91.733243,15.753127
+93,93,Point,GT,Guatemala,GT21,Jalapa,Jalapa,Jalapa,Jalapa,2101,93,-90.031232,14.630332
+94,94,Point,GT,Guatemala,GT22,Jutiapa,Jutiapa,Jalpatagua,Jalpatagua,2212,94,-90.009794,14.11429
+95,95,Point,GT,Guatemala,GT22,Jutiapa,Jutiapa,Jerez,Jerez,2208,95,-89.761903,14.07669
+96,96,Point,GT,Guatemala,GT20,Chiquimula,Chiquimula,Jocotán,Jocotan,2004,96,-89.357775,14.765763
+97,97,Point,GT,Guatemala,GT03,Sacatepéquez,Sacatepequez,Jocotenango,Jocotenango,302,97,-90.733903,14.588652
+98,98,Point,GT,Guatemala,GT14,Quiché,Quiche,Joyabaj,Joyabaj,1412,98,-90.821093,14.986361
+99,99,Point,GT,Guatemala,GT22,Jutiapa,Jutiapa,Jutiapa,Jutiapa,2201,99,-89.931039,14.311625
+100,100,Point,GT,Guatemala,GT12,San Marcos,San Marcos,La Blanca,La Blanca,1230,100,-92.119786,14.553556
+101,101,Point,GT,Guatemala,GT05,Escuintla,Escuintla,La Democracia,La Democracia,503,101,-90.949722,14.133497
+102,102,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,La Democracia,La Democracia,1312,102,-91.875812,15.62328
+103,103,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,La Esperanza,La Esperanza,923,103,-91.577176,14.878366
+104,104,Point,GT,Guatemala,GT05,Escuintla,Escuintla,La Gomera,La Gomera,507,104,-91.112518,14.07838
+105,105,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,La Libertad,La Libertad,1311,105,-91.927024,15.591449
+106,106,Point,GT,Guatemala,GT17,Petén,Peten,La Libertad,La Libertad,1705,106,-90.643084,17.029862
+107,107,Point,GT,Guatemala,GT12,San Marcos,San Marcos,La Reforma,La Reforma,1221,107,-91.849227,14.779648
+108,108,Point,GT,Guatemala,GT19,Zacapa,Zacapa,La Unión,La Union,1909,108,-89.278112,14.955214
+109,109,Point,GT,Guatemala,GT16,Alta Verapaz,Alta Verapaz,Lanquín,Lanquin,1611,109,-89.990132,15.566986
+110,110,Point,GT,Guatemala,GT17,Petén,Peten,Las Cruces,Las Cruces,1713,110,-90.480695,16.630339
+111,111,Point,GT,Guatemala,GT18,Izabal,Izabal,Lívingston,Livingston,1802,111,-89.151105,15.777356
+112,112,Point,GT,Guatemala,GT18,Izabal,Izabal,Los Amates,Los Amates,1805,112,-89.061305,15.269392
+113,113,Point,GT,Guatemala,GT03,Sacatepéquez,Sacatepequez,Magdalena Milpas Altas,Magdalena Milpas Altas,310,113,-90.67748,14.543278
+114,114,Point,GT,Guatemala,GT12,San Marcos,San Marcos,Malacatán,Malacatan,1215,114,-92.099086,14.933749
+115,115,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,Malacatancito,Malacatancito,1303,115,-91.483533,15.244415
+116,116,Point,GT,Guatemala,GT05,Escuintla,Escuintla,Masagua,Masagua,505,116,-90.809502,14.087567
+117,117,Point,GT,Guatemala,GT21,Jalapa,Jalapa,Mataquescuintla,Mataquescuintla,2107,117,-90.203816,14.555047
+118,118,Point,GT,Guatemala,GT10,Suchitepéquez,Suchitepequez,Mazatenango,Mazatenango,1001,118,-91.516751,14.543635
+119,119,Point,GT,Guatemala,GT17,Petén,Peten,Melchor de Mencos,Melchor de Mencos,1711,119,-89.244934,17.32259
+120,120,Point,GT,Guatemala,GT01,Guatemala,Guatemala,Mixco,Mixco,108,120,-90.587279,14.640754
+121,121,Point,GT,Guatemala,GT08,Totonicapán,Totonicapan,Momostenango,Momostenango,805,121,-91.41805,15.048196
+122,122,Point,GT,Guatemala,GT21,Jalapa,Jalapa,Monjas,Monjas,2106,122,-89.898412,14.511515
+123,123,Point,GT,Guatemala,GT18,Izabal,Izabal,Morales,Morales,1804,123,-88.77252,15.44631
+124,124,Point,GT,Guatemala,GT02,El Progreso,El Progreso,Morazán,Morazan,202,124,-90.161847,14.966036
+125,125,Point,GT,Guatemala,GT22,Jutiapa,Jutiapa,Moyuta,Moyuta,2214,125,-90.125606,13.910458
+126,126,Point,GT,Guatemala,GT07,Sololá,Solola,Nahualá,Nahuala,705,126,-91.294023,14.834349
+127,127,Point,GT,Guatemala,GT14,Quiché,Quiche,Nebaj,Nebaj,1413,127,-91.173275,15.562386
+128,128,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,Nentón,Nenton,1305,128,-91.67776,15.946031
+129,129,Point,GT,Guatemala,GT05,Escuintla,Escuintla,Nueva Concepción,Nueva Concepcion,513,129,-91.300692,14.122346
+130,130,Point,GT,Guatemala,GT06,Santa Rosa,Santa Rosa,Nueva Santa Rosa,Nueva Santa Rosa,614,130,-90.272378,14.371748
+131,131,Point,GT,Guatemala,GT12,San Marcos,San Marcos,Nuevo Progreso,Nuevo Progreso,1212,131,-91.907529,14.793402
+132,132,Point,GT,Guatemala,GT11,Retalhuleu,Retalhuleu,Nuevo San Carlos,Nuevo San Carlos,1108,132,-91.69183,14.62611
+133,133,Point,GT,Guatemala,GT12,San Marcos,San Marcos,Ocós,Ocos,1218,133,-92.188904,14.54023
+134,134,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,Olintepeque,Olintepeque,903,134,-91.535981,14.893643
+135,135,Point,GT,Guatemala,GT20,Chiquimula,Chiquimula,Olopa,Olopa,2006,135,-89.316413,14.700069
+136,136,Point,GT,Guatemala,GT06,Santa Rosa,Santa Rosa,Oratorio,Oratorio,606,136,-90.112127,14.141625
+137,137,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,Ostuncalco,Ostuncalco,909,137,-91.684709,14.878753
+138,138,Point,GT,Guatemala,GT14,Quiché,Quiche,Pachalum,Pachalum,1421,138,-90.654456,14.918896
+139,139,Point,GT,Guatemala,GT12,San Marcos,San Marcos,Pajapita,Pajapita,1222,139,-92.055605,14.735653
+140,140,Point,GT,Guatemala,GT01,Guatemala,Guatemala,Palencia,Palencia,105,140,-90.319499,14.665611
+141,141,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,Palestina de Los Altos,Palestina de Los Altos,924,141,-91.675925,14.933202
+142,142,Point,GT,Guatemala,GT05,Escuintla,Escuintla,Palín,Palin,511,142,-90.703851,14.395662
+143,143,Point,GT,Guatemala,GT07,Sololá,Solola,Panajachel,Panajachel,710,143,-91.146526,14.748332
+144,144,Point,GT,Guatemala,GT16,Alta Verapaz,Alta Verapaz,Panzós,Panzos,1607,144,-89.655668,15.3096
+145,145,Point,GT,Guatemala,GT04,Chimaltenango,Chimaltenango,Parramos,Parramos,414,145,-90.840652,14.579683
+146,146,Point,GT,Guatemala,GT22,Jutiapa,Jutiapa,Pasaco,Pasaco,2215,146,-90.263685,13.967475
+147,147,Point,GT,Guatemala,GT03,Sacatepéquez,Sacatepequez,Pastores,Pastores,303,147,-90.771499,14.59818
+148,148,Point,GT,Guatemala,GT10,Suchitepéquez,Suchitepequez,Patulul,Patulul,1014,148,-91.176369,14.380341
+149,149,Point,GT,Guatemala,GT04,Chimaltenango,Chimaltenango,Patzicía,Patzicia,409,149,-90.941402,14.636833
+150,150,Point,GT,Guatemala,GT14,Quiché,Quiche,Patzité,Patzite,1407,150,-91.196794,14.971608
+151,151,Point,GT,Guatemala,GT04,Chimaltenango,Chimaltenango,Patzún,Patzun,407,151,-91.034374,14.64706
+152,152,Point,GT,Guatemala,GT01,Guatemala,Guatemala,Petapa,Petapa,117,152,-90.555489,14.507222
+153,153,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,Petatán,Petatan,1333,153,-91.733889,15.626045
+154,154,Point,GT,Guatemala,GT04,Chimaltenango,Chimaltenango,Pochuta,Pochuta,408,154,-91.074903,14.533907
+155,155,Point,GT,Guatemala,GT17,Petén,Peten,Poptún,Poptun,1712,155,-89.572372,16.321587
+156,156,Point,GT,Guatemala,GT10,Suchitepéquez,Suchitepequez,Pueblo Nuevo,Pueblo Nuevo,1019,156,-91.527885,14.661147
+157,157,Point,GT,Guatemala,GT06,Santa Rosa,Santa Rosa,Pueblo Nuevo Viñas,Pueblo Nuevo Vinas,613,157,-90.497659,14.217257
+158,158,Point,GT,Guatemala,GT18,Izabal,Izabal,Puerto Barrios,Puerto Barrios,1801,158,-88.490611,15.70427
+159,159,Point,GT,Guatemala,GT15,Baja Verapaz,Baja Verapaz,Purulhá,Purulha,1508,159,-90.03847,15.216114
+160,160,Point,GT,Guatemala,GT22,Jutiapa,Jutiapa,Quesada,Quesada,2217,160,-90.059508,14.28565
+161,161,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,Quetzaltenango,Quetzaltenango,901,161,-91.533353,14.816375
+162,162,Point,GT,Guatemala,GT20,Chiquimula,Chiquimula,Quezaltepeque,Quezaltepeque,2009,162,-89.458732,14.617806
+163,163,Point,GT,Guatemala,GT15,Baja Verapaz,Baja Verapaz,Rabinal,Rabinal,1503,163,-90.507079,15.113301
+164,164,Point,GT,Guatemala,GT16,Alta Verapaz,Alta Verapaz,Raxruhá,Raxruha,1617,164,-90.080942,15.892322
+165,165,Point,GT,Guatemala,GT11,Retalhuleu,Retalhuleu,Retalhuleu,Retalhuleu,1101,165,-92.036038,14.481523
+166,166,Point,GT,Guatemala,GT12,San Marcos,San Marcos,Río Blanco,Rio Blanco,1228,166,-91.683612,15.037138
+167,167,Point,GT,Guatemala,GT10,Suchitepéquez,Suchitepequez,Río Bravo,Rio Bravo,1020,167,-91.333129,14.378591
+168,168,Point,GT,Guatemala,GT19,Zacapa,Zacapa,Río Hondo,Rio Hondo,1903,168,-89.600272,15.098471
+169,169,Point,GT,Guatemala,GT14,Quiché,Quiche,Sacapulas,Sacapulas,1416,169,-91.112896,15.264118
+170,170,Point,GT,Guatemala,GT15,Baja Verapaz,Baja Verapaz,Salamá,Salama,1501,170,-90.226652,15.162371
+171,171,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,Salcajá,Salcaja,902,171,-91.462449,14.877669
+172,172,Point,GT,Guatemala,GT10,Suchitepéquez,Suchitepequez,Samayac,Samayac,1008,172,-91.469843,14.572566
+173,173,Point,GT,Guatemala,GT02,El Progreso,El Progreso,San Agustín Acasaguastlán,San Agustin Acasaguastlan,203,173,-89.986084,15.019346
+174,174,Point,GT,Guatemala,GT17,Petén,Peten,San Andrés,San Andres,1704,174,-90.405087,17.489473
+175,175,Point,GT,Guatemala,GT04,Chimaltenango,Chimaltenango,San Andrés Itzapa,San Andres Itzapa,413,175,-90.864873,14.608124
+176,176,Point,GT,Guatemala,GT14,Quiché,Quiche,San Andrés Sajcabajá,San Andres Sajcabaja,1414,176,-90.948197,15.197355
+177,177,Point,GT,Guatemala,GT07,Sololá,Solola,San Andrés Semetabaj,San Andres Semetabaj,709,177,-91.106221,14.740193
+178,178,Point,GT,Guatemala,GT11,Retalhuleu,Retalhuleu,San Andrés Villa Seca,San Andres Villa Seca,1106,178,-91.65674,14.318028
+179,179,Point,GT,Guatemala,GT08,Totonicapán,Totonicapan,San Andrés Xecul,San Andres Xecul,804,179,-91.49743,14.910649
+180,180,Point,GT,Guatemala,GT03,Sacatepéquez,Sacatepequez,San Antonio Aguas Calientes,San Antonio Aguas Calientes,315,180,-90.777264,14.547757
+181,181,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,San Antonio Huista,San Antonio Huista,1324,181,-91.773676,15.664631
+182,182,Point,GT,Guatemala,GT14,Quiché,Quiche,San Antonio Ilotenango,San Antonio Ilotenango,1408,182,-91.214459,15.049353
+183,183,Point,GT,Guatemala,GT02,El Progreso,El Progreso,San Antonio La Paz,San Antonio La Paz,208,183,-90.274897,14.747302
+184,184,Point,GT,Guatemala,GT07,Sololá,Solola,San Antonio Palopó,San Antonio Palopo,712,184,-91.108243,14.664772
+185,185,Point,GT,Guatemala,GT12,San Marcos,San Marcos,San Antonio Sacatepéquez,San Antonio Sacatepequez,1203,185,-91.712345,14.950866
+186,186,Point,GT,Guatemala,GT10,Suchitepéquez,Suchitepequez,San Antonio Suchitepéquez,San Antonio Suchitepequez,1010,186,-91.408986,14.517322
+187,187,Point,GT,Guatemala,GT08,Totonicapán,Totonicapan,San Bartolo Aguas Calientes,San Bartolo Aguas Calientes,808,187,-91.460865,15.117052
+188,188,Point,GT,Guatemala,GT14,Quiché,Quiche,San Bartolomé Jocotenango,San Bartolome Jocotenango,1417,188,-91.033631,15.184521
+189,189,Point,GT,Guatemala,GT03,Sacatepéquez,Sacatepequez,San Bartolomé Milpas Altas,San Bartolome Milpas Altas,307,189,-90.685764,14.601758
+190,190,Point,GT,Guatemala,GT17,Petén,Peten,San Benito,San Benito,1703,190,-90.071989,16.930919
+191,191,Point,GT,Guatemala,GT10,Suchitepéquez,Suchitepequez,San Bernardino,San Bernardino,1004,191,-91.454227,14.530275
+192,192,Point,GT,Guatemala,GT21,Jalapa,Jalapa,San Carlos Alzatate,San Carlos Alzatate,2105,192,-90.07659,14.47851
+193,193,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,San Carlos Sija,San Carlos Sija,904,193,-91.565185,15.079503
+194,194,Point,GT,Guatemala,GT02,El Progreso,El Progreso,San Cristóbal Acasaguastlán,San Cristobal Acasaguastlan,204,194,-89.893475,15.000201
+195,195,Point,GT,Guatemala,GT12,San Marcos,San Marcos,San Cristóbal Cucho,San Cristobal Cucho,1225,195,-91.76888,14.888563
+196,196,Point,GT,Guatemala,GT08,Totonicapán,Totonicapan,San Cristóbal Totonicapán,San Cristobal Totonicapan,802,196,-91.445592,14.911647
+197,197,Point,GT,Guatemala,GT16,Alta Verapaz,Alta Verapaz,San Cristóbal Verapaz,San Cristobal Verapaz,1603,197,-90.565151,15.397259
+198,198,Point,GT,Guatemala,GT19,Zacapa,Zacapa,San Diego,San Diego,1908,198,-89.760072,14.798012
+199,199,Point,GT,Guatemala,GT11,Retalhuleu,Retalhuleu,San Felipe,San Felipe,1105,199,-91.630451,14.617231
+200,200,Point,GT,Guatemala,GT17,Petén,Peten,San Francisco,San Francisco,1706,200,-89.978111,16.647411
+201,201,Point,GT,Guatemala,GT08,Totonicapán,Totonicapan,San Francisco El Alto,San Francisco El Alto,803,201,-91.477391,14.969763
+202,202,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,San Francisco La Unión,San Francisco La Union,918,202,-91.546358,14.925764
+203,203,Point,GT,Guatemala,GT10,Suchitepéquez,Suchitepequez,San Francisco Zapotitlán,San Francisco Zapotitlan,1003,203,-91.536692,14.597859
+204,204,Point,GT,Guatemala,GT10,Suchitepéquez,Suchitepequez,San Gabriel,San Gabriel,1012,204,-91.514403,14.507696
+205,205,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,San Gaspar Ixchil,San Gaspar Ixchil,1329,205,-91.706608,15.366589
+206,206,Point,GT,Guatemala,GT20,Chiquimula,Chiquimula,San Jacinto,San Jacinto,2010,206,-89.513006,14.678162
+207,207,Point,GT,Guatemala,GT15,Baja Verapaz,Baja Verapaz,San Jerónimo,San Jeronimo,1507,207,-90.194249,15.065526
+208,208,Point,GT,Guatemala,GT19,Zacapa,Zacapa,San Jorge,San Jorge,1911,208,-89.60365,14.909331
+209,209,Point,GT,Guatemala,GT05,Escuintla,Escuintla,San José,San Jose,509,209,-90.882359,13.958672
+210,210,Point,GT,Guatemala,GT17,Petén,Peten,San José,San Jose,1702,210,-89.8097,17.404542
+211,211,Point,GT,Guatemala,GT22,Jutiapa,Jutiapa,San José Acatempa,San Jose Acatempa,2216,211,-90.145611,14.272053
+212,212,Point,GT,Guatemala,GT07,Sololá,Solola,San José Chacayá,San Jose Chacaya,702,212,-91.228389,14.771192
+213,213,Point,GT,Guatemala,GT01,Guatemala,Guatemala,San José del Golfo,San Jose del Golfo,104,213,-90.372463,14.793193
+214,214,Point,GT,Guatemala,GT10,Suchitepéquez,Suchitepequez,San José El Ídolo,San Jose El Idolo,1005,214,-91.431562,14.381519
+215,215,Point,GT,Guatemala,GT20,Chiquimula,Chiquimula,San José La Arada,San Jose La Arada,2002,215,-89.608389,14.716192
+216,216,Point,GT,Guatemala,GT10,Suchitepéquez,Suchitepequez,San José La Máquina,San Jose La Maquina,1021,216,-91.583021,14.28367
+217,217,Point,GT,Guatemala,GT12,San Marcos,San Marcos,San José Ojetenam,San Jose Ojetenam,1224,217,-91.960272,15.232022
+218,218,Point,GT,Guatemala,GT01,Guatemala,Guatemala,San José Pinula,San Jose Pinula,103,218,-90.346363,14.554316
+219,219,Point,GT,Guatemala,GT04,Chimaltenango,Chimaltenango,San José Poaquil,San Jose Poaquil,402,219,-90.908312,14.856867
+220,220,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,San Juan Atitán,San Juan Atitan,1316,220,-91.626271,15.472592
+221,221,Point,GT,Guatemala,GT10,Suchitepéquez,Suchitepequez,San Juan Bautista,San Juan Bautista,1016,221,-91.198911,14.4284
+222,222,Point,GT,Guatemala,GT16,Alta Verapaz,Alta Verapaz,San Juan Chamelco,San Juan Chamelco,1610,222,-90.236563,15.389821
+223,223,Point,GT,Guatemala,GT14,Quiché,Quiche,San Juan Cotzal,San Juan Cotzal,1411,223,-91.09628,15.41602
+224,224,Point,GT,Guatemala,GT20,Chiquimula,Chiquimula,San Juan Ermita,San Juan Ermita,2003,224,-89.426862,14.734684
+225,225,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,San Juan Ixcoy,San Juan Ixcoy,1323,225,-91.386308,15.649357
+226,226,Point,GT,Guatemala,GT07,Sololá,Solola,San Juan La Laguna,San Juan La Laguna,717,226,-91.3147,14.667563
+227,227,Point,GT,Guatemala,GT01,Guatemala,Guatemala,San Juan Sacatepéquez,San Juan Sacatepequez,110,227,-90.650181,14.76953
+228,228,Point,GT,Guatemala,GT06,Santa Rosa,Santa Rosa,San Juan Tecuaco,San Juan Tecuaco,607,228,-90.268909,14.071977
+229,229,Point,GT,Guatemala,GT10,Suchitepéquez,Suchitepequez,San Lorenzo,San Lorenzo,1007,229,-91.534133,14.209523
+230,230,Point,GT,Guatemala,GT12,San Marcos,San Marcos,San Lorenzo,San Lorenzo,1229,230,-91.744081,15.026781
+231,231,Point,GT,Guatemala,GT03,Sacatepéquez,Sacatepequez,San Lucas Sacatepéquez,San Lucas Sacatepequez,308,231,-90.648526,14.598055
+232,232,Point,GT,Guatemala,GT07,Sololá,Solola,San Lucas Tolimán,San Lucas Toliman,713,232,-91.14661,14.595611
+233,233,Point,GT,Guatemala,GT17,Petén,Peten,San Luis,San Luis,1709,233,-89.649499,16.122629
+234,234,Point,GT,Guatemala,GT21,Jalapa,Jalapa,San Luis Jilotepeque,San Luis Jilotepeque,2103,234,-89.715099,14.653538
+235,235,Point,GT,Guatemala,GT21,Jalapa,Jalapa,San Manuel Chaparrón,San Manuel Chaparron,2104,235,-89.761175,14.52643
+236,236,Point,GT,Guatemala,GT12,San Marcos,San Marcos,San Marcos,San Marcos,1201,236,-91.835708,15.016458
+237,237,Point,GT,Guatemala,GT07,Sololá,Solola,San Marcos La Laguna,San Marcos La Laguna,716,237,-91.259854,14.735998
+238,238,Point,GT,Guatemala,GT04,Chimaltenango,Chimaltenango,San Martín Jilotepeque,San Martin Jilotepeque,403,238,-90.781648,14.84047
+239,239,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,San Martín Sacatepéquez,San Martin Sacatepequez,912,239,-91.66439,14.795213
+240,240,Point,GT,Guatemala,GT11,Retalhuleu,Retalhuleu,San Martín Zapotitlán,San Martin Zapotitlan,1104,240,-91.593895,14.61372
+241,241,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,San Mateo,San Mateo,910,241,-91.585514,14.844543
+242,242,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,San Mateo Ixtatán,San Mateo Ixtatan,1318,242,-91.439243,15.93302
+243,243,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,San Miguel Acatán,San Miguel Acatan,1313,243,-91.6242,15.743213
+244,244,Point,GT,Guatemala,GT15,Baja Verapaz,Baja Verapaz,San Miguel Chicaj,San Miguel Chicaj,1502,244,-90.416367,15.141678
+245,245,Point,GT,Guatemala,GT03,Sacatepéquez,Sacatepequez,San Miguel Dueñas,San Miguel Duenas,313,245,-90.832393,14.527785
+246,246,Point,GT,Guatemala,GT12,San Marcos,San Marcos,San Miguel Ixtahuacán,San Miguel Ixtahuacan,1205,246,-91.734539,15.262933
+247,247,Point,GT,Guatemala,GT10,Suchitepéquez,Suchitepequez,San Miguel Panán,San Miguel Panan,1011,247,-91.359577,14.506138
+248,248,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,San Miguel Sigüila,San Miguel Siguila,908,248,-91.602459,14.903184
+249,249,Point,GT,Guatemala,GT12,San Marcos,San Marcos,San Pablo,San Pablo,1219,249,-91.946321,14.974593
+250,250,Point,GT,Guatemala,GT10,Suchitepéquez,Suchitepequez,San Pablo Jocopilas,San Pablo Jocopilas,1009,250,-91.431248,14.591834
+251,251,Point,GT,Guatemala,GT07,Sololá,Solola,San Pablo La Laguna,San Pablo La Laguna,715,251,-91.280681,14.729817
+252,252,Point,GT,Guatemala,GT01,Guatemala,Guatemala,San Pedro Ayampuc,San Pedro Ayampuc,107,252,-90.442079,14.772346
+253,253,Point,GT,Guatemala,GT16,Alta Verapaz,Alta Verapaz,San Pedro Carchá,San Pedro Carcha,1609,253,-90.15205,15.578923
+254,254,Point,GT,Guatemala,GT14,Quiché,Quiche,San Pedro Jocopilas,San Pedro Jocopilas,1409,254,-91.166116,15.160598
+255,255,Point,GT,Guatemala,GT07,Sololá,Solola,San Pedro La Laguna,San Pedro La Laguna,718,255,-91.277763,14.645331
+256,256,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,San Pedro Necta,San Pedro Necta,1306,256,-91.755587,15.527796
+257,257,Point,GT,Guatemala,GT21,Jalapa,Jalapa,San Pedro Pinula,San Pedro Pinula,2102,257,-89.854375,14.703463
+258,258,Point,GT,Guatemala,GT01,Guatemala,Guatemala,San Pedro Sacatepéquez,San Pedro Sacatepequez,109,258,-90.637606,14.672732
+259,259,Point,GT,Guatemala,GT12,San Marcos,San Marcos,San Pedro Sacatepéquez,San Pedro Sacatepequez,1202,259,-91.788929,14.990348
+260,260,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,San Rafael La Independencia,San Rafael La Independencia,1314,260,-91.522285,15.729726
+261,261,Point,GT,Guatemala,GT06,Santa Rosa,Santa Rosa,San Rafael Las Flores,San Rafael Las Flores,605,261,-90.162409,14.450823
+262,262,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,San Rafael Petzal,San Rafael Petzal,1328,262,-91.672561,15.40717
+263,263,Point,GT,Guatemala,GT12,San Marcos,San Marcos,San Rafael Pie de la Cuesta,San Rafael Pie de la Cuesta,1211,263,-91.911728,14.928141
+264,264,Point,GT,Guatemala,GT01,Guatemala,Guatemala,San Raymundo,San Raymundo,111,264,-90.559746,14.781826
+265,265,Point,GT,Guatemala,GT11,Retalhuleu,Retalhuleu,San Sebastián,San Sebastian,1102,265,-91.649495,14.566643
+266,266,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,San Sebastián Coatán,San Sebastian Coatan,1325,266,-91.58479,15.813259
+267,267,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,San Sebastián Huehuetenango,San Sebastian Huehuetenango,1320,267,-91.55835,15.429192
+268,268,Point,GT,Guatemala,GT05,Escuintla,Escuintla,San Vicente Pacaya,San Vicente Pacaya,512,268,-90.645352,14.332522
+269,269,Point,GT,Guatemala,GT02,El Progreso,El Progreso,Sanarate,Sanarate,206,269,-90.257623,14.837318
+270,270,Point,GT,Guatemala,GT02,El Progreso,El Progreso,Sansare,Sansare,207,270,-90.099013,14.754024
+271,271,Point,GT,Guatemala,GT17,Petén,Peten,Santa Ana,Santa Ana,1707,271,-89.576929,16.824704
+272,272,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,Santa Ana Huista,Santa Ana Huista,1331,272,-91.849014,15.743513
+273,273,Point,GT,Guatemala,GT04,Chimaltenango,Chimaltenango,Santa Apolonia,Santa Apolonia,405,273,-90.9582,14.820548
+274,274,Point,GT,Guatemala,GT10,Suchitepéquez,Suchitepequez,Santa Bárbara,Santa Barbara,1015,274,-91.246725,14.474427
+275,275,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,Santa Bárbara,Santa Barbara,1310,275,-91.625419,15.341353
+276,276,Point,GT,Guatemala,GT16,Alta Verapaz,Alta Verapaz,Santa Catalina La Tinta,Santa Catalina La Tinta,1616,276,-89.833989,15.254559
+277,277,Point,GT,Guatemala,GT03,Sacatepéquez,Sacatepequez,Santa Catarina Barahona,Santa Catarina Barahona,316,277,-90.806199,14.555369
+278,278,Point,GT,Guatemala,GT07,Sololá,Solola,Santa Catarina Ixtahuacán,Santa Catarina Ixtahuacan,706,278,-91.38143,14.720526
+279,279,Point,GT,Guatemala,GT22,Jutiapa,Jutiapa,Santa Catarina Mita,Santa Catarina Mita,2203,279,-89.770634,14.441209
+280,280,Point,GT,Guatemala,GT07,Sololá,Solola,Santa Catarina Palopó,Santa Catarina Palopo,711,280,-91.124107,14.708488
+281,281,Point,GT,Guatemala,GT01,Guatemala,Guatemala,Santa Catarina Pinula,Santa Catarina Pinula,102,281,-90.465079,14.564392
+282,282,Point,GT,Guatemala,GT07,Sololá,Solola,Santa Clara La Laguna,Santa Clara La Laguna,707,282,-91.297063,14.72527
+283,283,Point,GT,Guatemala,GT04,Chimaltenango,Chimaltenango,Santa Cruz Balanyá,Santa Cruz Balanya,410,283,-90.933574,14.695537
+284,284,Point,GT,Guatemala,GT14,Quiché,Quiche,Santa Cruz del Quiché,Santa Cruz del Quiche,1401,284,-91.123616,15.041317
+285,285,Point,GT,Guatemala,GT07,Sololá,Solola,Santa Cruz La Laguna,Santa Cruz La Laguna,714,285,-91.223815,14.743711
+286,286,Point,GT,Guatemala,GT11,Retalhuleu,Retalhuleu,Santa Cruz Muluá,Santa Cruz Mulua,1103,286,-91.654548,14.464
+287,287,Point,GT,Guatemala,GT06,Santa Rosa,Santa Rosa,Santa Cruz Naranjo,Santa Cruz Naranjo,612,287,-90.356886,14.370148
+288,288,Point,GT,Guatemala,GT16,Alta Verapaz,Alta Verapaz,Santa Cruz Verapaz,Santa Cruz Verapaz,1602,288,-90.414018,15.339483
+289,289,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,Santa Eulalia,Santa Eulalia,1317,289,-91.325386,15.750743
+290,290,Point,GT,Guatemala,GT05,Escuintla,Escuintla,Santa Lucía Cotzumalguapa,Santa Lucia Cotzumalguapa,502,290,-91.070876,14.287237
+291,291,Point,GT,Guatemala,GT08,Totonicapán,Totonicapan,Santa Lucía La Reforma,Santa Lucia La Reforma,807,291,-91.269168,15.146075
+292,292,Point,GT,Guatemala,GT03,Sacatepéquez,Sacatepequez,Santa Lucía Milpas Altas,Santa Lucia Milpas Altas,309,292,-90.675527,14.568429
+293,293,Point,GT,Guatemala,GT07,Sololá,Solola,Santa Lucía Utatlán,Santa Lucia Utatlan,704,293,-91.274931,14.779448
+294,294,Point,GT,Guatemala,GT08,Totonicapán,Totonicapan,Santa María Chiquimula,Santa Maria Chiquimula,806,294,-91.317227,15.013504
+295,295,Point,GT,Guatemala,GT03,Sacatepéquez,Sacatepequez,Santa María de Jesús,Santa Maria de Jesus,311,295,-90.698936,14.475858
+296,296,Point,GT,Guatemala,GT06,Santa Rosa,Santa Rosa,Santa María Ixhuatán,Santa Maria Ixhuatan,610,296,-90.257943,14.14469
+297,297,Point,GT,Guatemala,GT07,Sololá,Solola,Santa María Visitación,Santa Maria Visitacion,703,297,-91.331584,14.701814
+298,298,Point,GT,Guatemala,GT06,Santa Rosa,Santa Rosa,Santa Rosa de Lima,Santa Rosa de Lima,603,298,-90.337153,14.442907
+299,299,Point,GT,Guatemala,GT07,Sololá,Solola,Santiago Atitlán,Santiago Atitlan,719,299,-91.227695,14.603974
+300,300,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,Santiago Chimaltenango,Santiago Chimaltenango,1330,300,-91.685204,15.508341
+301,301,Point,GT,Guatemala,GT03,Sacatepéquez,Sacatepequez,Santiago Sacatepéquez,Santiago Sacatepequez,306,301,-90.681444,14.641072
+302,302,Point,GT,Guatemala,GT10,Suchitepéquez,Suchitepequez,Santo Domingo Suchitepéquez,Santo Domingo Suchitepequez,1006,302,-91.470087,14.21463
+303,303,Point,GT,Guatemala,GT03,Sacatepéquez,Sacatepequez,Santo Domingo Xenacoj,Santo Domingo Xenacoj,305,303,-90.701291,14.67925
+304,304,Point,GT,Guatemala,GT10,Suchitepéquez,Suchitepequez,Santo Tomás La Unión,Santo Tomas La Union,1017,304,-91.412101,14.623626
+305,305,Point,GT,Guatemala,GT17,Petén,Peten,Sayaxché,Sayaxche,1710,305,-90.222115,16.305611
+306,306,Point,GT,Guatemala,GT16,Alta Verapaz,Alta Verapaz,Senahú,Senahu,1608,306,-89.839361,15.418848
+307,307,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,Sibilia,Sibilia,905,307,-91.641288,14.989288
+308,308,Point,GT,Guatemala,GT12,San Marcos,San Marcos,Sibinal,Sibinal,1208,308,-92.05625,15.136585
+309,309,Point,GT,Guatemala,GT12,San Marcos,San Marcos,Sipacapa,Sipacapa,1226,309,-91.657584,15.192955
+310,310,Point,GT,Guatemala,GT05,Escuintla,Escuintla,Sipacate,Sipacate,514,310,-91.142961,13.959662
+311,311,Point,GT,Guatemala,GT05,Escuintla,Escuintla,Siquinalá,Siquinala,504,311,-90.939926,14.350083
+312,312,Point,GT,Guatemala,GT07,Sololá,Solola,Sololá,Solola,701,312,-91.180966,14.823235
+313,313,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,Soloma,Soloma,1308,313,-91.43172,15.700734
+314,314,Point,GT,Guatemala,GT03,Sacatepéquez,Sacatepequez,Sumpango,Sumpango,304,314,-90.745488,14.657896
+315,315,Point,GT,Guatemala,GT12,San Marcos,San Marcos,Tacaná,Tacana,1207,315,-92.077692,15.228412
+316,316,Point,GT,Guatemala,GT16,Alta Verapaz,Alta Verapaz,Tactic,Tactic,1604,316,-90.3376,15.298081
+317,317,Point,GT,Guatemala,GT12,San Marcos,San Marcos,Tajumulco,Tajumulco,1209,317,-91.970645,15.062424
+318,318,Point,GT,Guatemala,GT16,Alta Verapaz,Alta Verapaz,Tamahú,Tamahu,1605,318,-90.241692,15.303166
+319,319,Point,GT,Guatemala,GT06,Santa Rosa,Santa Rosa,Taxisco,Taxisco,609,319,-90.547369,14.03412
+320,320,Point,GT,Guatemala,GT04,Chimaltenango,Chimaltenango,Tecpán Guatemala,Tecpan Guatemala,406,320,-91.04783,14.763255
+321,321,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,Tectitán,Tectitan,1321,321,-92.03962,15.364456
+322,322,Point,GT,Guatemala,GT19,Zacapa,Zacapa,Teculután,Teculutan,1905,322,-89.84058,15.119718
+323,323,Point,GT,Guatemala,GT12,San Marcos,San Marcos,Tejutla,Tejutla,1210,323,-91.830493,15.158537
+324,324,Point,GT,Guatemala,GT05,Escuintla,Escuintla,Tiquisate,Tiquisate,506,324,-91.40415,14.185567
+325,325,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,Todos Santos Cuchumatán,Todos Santos Cuchumatan,1315,325,-91.585011,15.572543
+326,326,Point,GT,Guatemala,GT08,Totonicapán,Totonicapan,Totonicapán,Totonicapan,801,326,-91.311227,14.908131
+327,327,Point,GT,Guatemala,GT16,Alta Verapaz,Alta Verapaz,Tucurú,Tucuru,1606,327,-90.080996,15.302686
+328,328,Point,GT,Guatemala,GT13,Huehuetenango,Huehuetenango,Unión Cantinil,Union Cantinil,1332,328,-91.738574,15.589054
+329,329,Point,GT,Guatemala,GT14,Quiché,Quiche,Uspantán,Uspantan,1415,329,-90.806361,15.283859
+330,330,Point,GT,Guatemala,GT19,Zacapa,Zacapa,Usumatlán,Usumatlan,1906,330,-89.807843,14.980183
+331,331,Point,GT,Guatemala,GT01,Guatemala,Guatemala,Villa Canales,Villa Canales,116,331,-90.536939,14.344442
+332,332,Point,GT,Guatemala,GT01,Guatemala,Guatemala,Villa Nueva,Villa Nueva,115,332,-90.60643,14.540941
+333,333,Point,GT,Guatemala,GT04,Chimaltenango,Chimaltenango,Yepocapa,Yepocapa,412,333,-90.985347,14.463832
+334,334,Point,GT,Guatemala,GT22,Jutiapa,Jutiapa,Yupiltepeque,Yupiltepeque,2206,334,-89.803946,14.199785
+335,335,Point,GT,Guatemala,GT19,Zacapa,Zacapa,Zacapa,Zacapa,1901,335,-89.461167,14.977377
+336,336,Point,GT,Guatemala,GT14,Quiché,Quiche,Zacualpa,Zacualpa,1404,336,-90.885163,15.093312
+337,337,Point,GT,Guatemala,GT22,Jutiapa,Jutiapa,Zapotitlán,Zapotitlan,2210,337,-89.821314,14.116036
+338,338,Point,GT,Guatemala,GT04,Chimaltenango,Chimaltenango,Zaragoza,Zaragoza,415,338,-90.894392,14.662468
+339,339,Point,GT,Guatemala,GT09,Quetzaltenango,Quetzaltenango,Zunil,Zunil,916,339,-91.49612,14.745039
+340,340,Point,GT,Guatemala,GT10,Suchitepéquez,Suchitepequez,Zunilito,Zunilito,1018,340,-91.498645,14.631176

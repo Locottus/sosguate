@@ -1,13 +1,20 @@
 import tweepy, psycopg2, os, json, datetime, sys, requests, time
 import pandas as pd
 
+
+
+
 f = open("sosagua.txt", "a")
 #connstr para bd
 #dev str
-#conn_string = "host='localhost' dbname='sosagua' user='postgres' password='Guatemala1'"
+conn_string = "host='localhost' dbname='sosguate' user='postgres' password='Guatemala1'"
+
+
 
 #produccion str
-conn_string = "host='localhost' dbname='sosguate' user='postgres' password='postgres2020!Incyt'"
+#conn_string = "host='localhost' dbname='sosguate' user='postgres' password='postgres2020!Incyt'"
+
+
 
 '''
 HERLICH STEVEN GONZALEZ ZAMBRANO 2020 --> EN CUARENTENA MUNDIAL
@@ -39,9 +46,6 @@ update pg_database set encoding = pg_char_to_encoding('UTF8') where datname = 's
 create table public.fase1(
 	fecha timestamp without time zone primary key DEFAULT now(),
 	textjson text not null ,
-	origen text null,
-	municipio numeric  default 0,
-	necesidad numeric  default 1
 )
 
 
@@ -189,7 +193,28 @@ def write(cadena):
     except:
         print("could not write")
 
-        
+
+def getHashtags():
+    hashtags = []
+    try:
+        write('getting hashtags')
+        conn = psycopg2.connect(conn_string)
+
+        # conn.cursor will return a cursor object, you can use this cursor to perform queries
+        cursor = conn.cursor()
+        cursor.execute('select * from hashtags')
+        rows = cursor.fetchall()
+    
+        for row in rows:
+            hashtags.append(row[1])
+
+        conn.close()
+
+    except:
+        write("error en getLocation")
+    return hashtags
+
+
 def getLocation():
     try:
         from psycopg2.extras import RealDictCursor
@@ -213,6 +238,16 @@ def ejecutaComandoPsql(query):
     except:
         write("error en ejecutar comando psql")
 
+def searchHashtag(message):
+    message = message.upper()
+    print(message)
+    ht = ''
+    for m in hashtags:
+        if (m in message):
+            print(True, m)
+            ht = ht + ' ' + m
+    return ht
+
 
 def getDataSMS(fecha):
     #data = pd.read_json('https://arcgis-web.url.edu.gt/incyt/api/sms/getSMS?fecha=2020-05-13')
@@ -222,6 +257,8 @@ def getDataSMS(fecha):
 def insertSMS(sms):
     print('*********')
     for index, row in sms.iterrows():
+        ht = searchHashtag(row.sms['body'])
+        
         #print(row.sms['_id'])
         mined = {
                             "id":              row.sms['_id'],
@@ -235,7 +272,7 @@ def insertSMS(sms):
                             "geo":             "false",
                             "created_at":      row.sms['date'],
                             "favorite_count":  row.sms['date'],
-                            "hashtags":        "#SOSAGUAGT,#AGUAGT,#SINAGUAGT",
+                            "hashtags":        ht,
                             "status_count":    row.sms['read'],
                             "place":           "[SMS]",
                             "source":          "SMS",
@@ -243,18 +280,20 @@ def insertSMS(sms):
                             "necesidadId":     0
                         }
         print(mined)
-        postMethod(mined)
+        if (len(ht)>0):
+          postMethod(mined)#SMS APPROVED, HASHTAG FOUND
 
 
-#ADD HERE NEW HASHTAGS
-hashtags = ["#AGUAGT", "#SOSAGUAGT", '#SINAGUAGT']
-#hashtags = ["#TRAFICOGT"]
 nTwits = 50000
+fecha = getProcessDate()
+hashtags = getHashtags()
+
 
 if __name__ == "__main__":
+
   write("*************************************************************")
-  fecha = getProcessDate()
   write(fecha)
+
   write("FASE 1.0 --> CONECTANDO A TWITTER PARA EXTRAER TWITS DEL DIA")
   
   for x in hashtags:
@@ -275,11 +314,6 @@ if __name__ == "__main__":
 
   query = "update fase1  set municipio = m1.id from  municipios m1 where lower(fase1.textjson) like '%' || lower(m1.municipi_1) || '%'  and fase1.municipio = 0  and fase1.fecha > '" + str(fecha) + " 00:00:00' "
   ejecutaComandoPsql(query)
-
-  #write('FASE 1.4 --> borrando datos del mes y ano actual del cubo para actualizar cubo1')
-  #query = "delete from fase1 where municipio = 0 "
-  #ejecutaComandoPsql(query)
-
 
   write('FASE 1.5 --> actualizando necesidades a tabla fase1')
   query = "update fase1  set necesidad = s1.necesidad from  sinonimos s1 where lower(fase1.textjson) like '%' || lower(s1.sinonimo) || '%'  and extract(MONTH from FECHA) = extract(MONTH from now()) and extract(YEAR from FECHA) = extract(YEAR from now())"

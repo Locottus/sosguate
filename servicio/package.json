@@ -1,0 +1,16 @@
+{
+  "name": "sosguate",
+  "version": "1.0.0",
+  "description": "servicios para el proyecto S.O.S GUATEMALA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Herlich Steven Gonzalez Zambrano",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "pg": "^8.2.1"
+  }
+}

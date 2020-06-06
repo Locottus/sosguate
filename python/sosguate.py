@@ -49,6 +49,14 @@ create table public.fase1(
 )
 
 
+create table public.sosguate(
+	fecha timestamp without time zone primary key DEFAULT now(),
+	textjson text not null ,
+	municipio numeric null
+)
+
+
+
 create table cubo1(
 	municipio numeric not null,
 	necesidad numeric not null,
@@ -257,7 +265,7 @@ def getDataSMS(fecha):
 def insertSMS(sms):
     print('*********')
     for index, row in sms.iterrows():
-        ht = searchHashtag(row.sms['body'])
+        ht = searchHashtag(convUTF8(row.sms['body']))
         
         #print(row.sms['_id'])
         mined = {
@@ -284,9 +292,54 @@ def insertSMS(sms):
           postMethod(mined)#SMS APPROVED, HASHTAG FOUND
 
 
+def municipios():
+    m = []
+    conn = psycopg2.connect(conn_string)
+    cursor = conn.cursor()
+    cursor.execute('select id, municipi_1 from municipios ')
+    rows = cursor.fetchall()
+    for row in rows:
+        m.append([row[0],row[1].upper()])
+    conn.close()
+    return m
+
+def msgDiarios(fecha):
+    query = "select textjson from fase1 where fecha > '" + str(fecha) + " 00:00:00' "
+    print(fecha)
+    print(query)
+    conn = psycopg2.connect(conn_string)
+    cursor = conn.cursor()
+    cursor.execute(query)
+    rows = cursor.fetchall()
+    for row in rows:
+        s = convUTF8(row[0]).upper()
+        n = searchMunicipios(s)
+        ejecutaComandoPsql("insert into sosguate(textjson,municipio) values ('" + row[0] + "','" + str(n) + "') ")
+    conn.close()
+
+
+
+def searchMunicipios(message):
+    retorno = 0
+    print(message)
+    for n, m in nombreMunicipios:
+        #print(n,m)
+        if (m in message):
+            print(True, m)
+            retorno = n
+    return retorno
+
+
+
+
+nombreMunicipios = municipios()
 nTwits = 50000
 fecha = getProcessDate()
 hashtags = getHashtags()
+msgDiarios(fecha)#le pone localidad al aviso
+
+
+
 
 
 if __name__ == "__main__":
@@ -306,6 +359,12 @@ if __name__ == "__main__":
   write("adquiriendo SMS")
   insertSMS(getDataSMS(fecha))
   
+  query = "select textjson from fase1 where fecha > '" + str(fecha) + " 00:00:00' "
+  
+  f.close()
+  
+  
+  '''
   write('FASE 1.2 --> AGREGANDO COORDENADAS DE MUNICIPIOS AL QUERY')
   query = "update fase1  set municipio = m1.id from  municipios m1 where lower(fase1.textjson) like '%' || lower(m1.departamen_1) || '%' and fase1.municipio = 0  and fase1.fecha > '" + str(fecha) + " 00:00:00' "
   ejecutaComandoPsql(query)
@@ -330,3 +389,4 @@ if __name__ == "__main__":
   write("proceso terminado")
   f.close()
 
+'''

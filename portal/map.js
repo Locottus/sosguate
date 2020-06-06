@@ -70,6 +70,7 @@ require([
     responseType: "json",
   };
 
+  /*
   //Staadten detail Dienst addresse
   url = "https://arcgis-web.url.edu.gt/incyt/api/sosagua/getdepartamentos";
   esriRequest(url, options).then(function (response) {
@@ -112,7 +113,7 @@ require([
     }
   });
   //ENDE DES RESTS DIENST
-
+*/
   //MAP ANSICHT
   var coordsWidget = document.createElement("div");
   coordsWidget.id = "coordsWidget";
@@ -135,7 +136,7 @@ require([
     this.x = pt.longitude.toFixed(5);
     this.y = pt.latitude.toFixed(5);
     //console.log(this.x, this.y);
-    console.log(infoUser.browserName(),infoUser.latitude(), infoUser.longitude(),infoUser.altitude());
+    //console.log(infoUser.browserName(),infoUser.latitude(), infoUser.longitude(),infoUser.altitude());
   }
 
   //*** Add event and show center coordinates after the view is finished moving e.g. zoom, pan ***//

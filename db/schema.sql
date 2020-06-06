@@ -30,6 +30,11 @@ CREATE TABLE public.fase1
   CONSTRAINT fase1_pkey PRIMARY KEY (fecha)
 );
 
+create table public.sosguate(
+	fecha timestamp without time zone primary key DEFAULT now(),
+	textjson text not null unique ,
+	municipio numeric null
+)
 
 CREATE TABLE public.municipios
 (

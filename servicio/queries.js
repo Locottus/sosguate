@@ -19,7 +19,9 @@ const pool = new Pool({
 
 const getAlertsMaster = (request, response) => {
   // select m.departamento,m.municipio,m.point_x,m.point_y,count(*) from sosguate s, municipios m where s.municipio = m.id group by m.departamento,m.municipio,m.point_x,m.point_y
-  pool.query(' select m.departamento,m.municipio,m.point_x,m.point_y,count(*) from sosguate s, municipios m where s.municipio = m.id group by m.departamento,m.municipio,m.point_x,m.point_y ', (error, results) => {
+  var q = ' select m.departamento,m.municipio,m.point_x,m.point_y,count(*),m.id from sosguate s, municipios m where s.municipio = m.id group by m.departamento,m.municipio,m.point_x,m.point_y,m.id ';
+  console.log(q);
+  pool.query(q, (error, results) => {
     if (error) {
       //throw error
       response.status(500).send(`{'msg':'error'}`);
@@ -97,7 +99,7 @@ const getAlertsDetail = (request, response) => {
 
 const getAlertsDetailReport = (request, response) => {
   var id = request.query.id;
-  var q =  'select textjson from sosguate where municipio = ' + id ;
+  var q =  'select * from sosguate where municipio = ' + id ;
   console.log(q);
   pool.query(q, (error, results) => {
     if (error) {

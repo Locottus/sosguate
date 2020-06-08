@@ -90,7 +90,7 @@ function acurateLocation(){
 function reporteCubo1() {
   //var strValue = document.getElementById('txtboxId').value;
   var url = "cubo1.html?id=" + currentMunicipioId + '&municipio=' + currentMunicipio + '&departamento=' + currentDepartment ;
-  myWindow = window.open(url, '', 'width=800,height=200,scrollbars=1');
+  myWindow = window.open(url, '', 'width=800,height=600,scrollbars=1');
   myWindow.focus();
 }
 
@@ -100,7 +100,7 @@ function postData(){
     var nId = getNecesidadId(document.getElementById("selectNecesidad").value);
     //console.log(mId + " " + nId);
     var src = 'Web Page';
-    var url = "https://arcgis-web.url.edu.gt/incyt/api/sosagua/createalerts";
+    var url = stamm + "/createalerts";
     var template =  
       '{"id":"'  +           Date.now()  +  '",' +
       '"name":"'  +           document.getElementById("email").value +  '",' +

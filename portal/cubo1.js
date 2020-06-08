@@ -1,8 +1,13 @@
 function reporte(id) {
   //console.log("entrando a generar reporte");
   //console.log(currentDepartment + ' ' + currentMunicipio + ' ' +currentMunicipioId);
+
+
+  //var stamm = "https://arcgis-web.url.edu.gt/incyt/api/sosguate";
+  var stamm = "http://localhost:3000/incyt/api/sosguate";
+
   var url =
-    "https://arcgis-web.url.edu.gt/incyt/api/sosagua/getalertsdetailreport" +
+    stamm + "/getalertsdetailreport" +
     "?id=" + id;
 
   $.get(url, function (data, status) {
@@ -27,39 +32,38 @@ function fillTable(data) {
   table.innerHTML =
     "<thead>" +
     "   <tr>" +
-    "    <th scope='col'>Nombre</th>" +
-    "    <th scope='col'>Texto</th>" +
     "    <th scope='col'>Fecha</th>" +
-    "    <th scope='col'>Fuente</th>" +
+    "    <th scope='col'>Alerta</th>" +
     "  </tr>" +
     "</thead>  ";
 
+  console.log(data)
   for (var i = 0; i < data.length; i++) {
-    console.log(JSON.parse(data[i].textjson));
-    var atributos = ({ name, text, created_at, source } = JSON.parse(data[i].textjson));
+    //console.log(data);
+    var atributos = ({ fecha,textjson } = data[i]);
     var myDate;
 
-    if(isNaN(atributos.created_at)){
+    /*if(isNaN(atributos.created_at)){
       console.log(atributos.created_at + " is not a number ");
       myDate = atributos.created_at;
      }else{
       console.log(atributos.created_at + " is a number ");
       myDate = new Date(1000 * atributos.created_at);
       console.log(myDate);
-     }
+     }*/
     
-    //console.log(atributos);
+    console.log(atributos);
 
     // IM WEBSITE ANSEHEN
     var row = table.insertRow(i + 1);
     var cell0 = row.insertCell(0);
     var cell1 = row.insertCell(1);
-    var cell2 = row.insertCell(2);
-    var cell3 = row.insertCell(3);
-    cell0.innerHTML = atributos.name;
-    cell1.innerHTML = atributos.text;
-    cell2.innerHTML = myDate;//atributos.created_at;
-    cell3.innerHTML = atributos.source;
+    //var cell2 = row.insertCell(2);
+    //var cell3 = row.insertCell(3);
+    cell0.innerHTML = atributos.fecha;
+    cell1.innerHTML = atributos.textjson;
+    //cell2.innerHTML = myDate;//atributos.created_at;
+    //cell3.innerHTML = atributos.source;
   }
 }
 $(document).ready(function () {

@@ -46,7 +46,7 @@ require([
 
     var simpleMarkerSymbol = {
       type: "simple-marker",
-      color: [23, 162, 184], // https://www.w3schools.com/colors/colors_picker.asp
+      color: [255, 0, 0], // https://www.w3schools.com/colors/colors_picker.asp
       outline: {
         color: [255, 255, 255], // white
         width: 1,
@@ -106,7 +106,8 @@ require([
         municipio,
         point_x,
         point_y,
-        count
+        count,
+        id
       } = response.data[i]);
       console.log(atributos);
       createPoint(
@@ -149,65 +150,29 @@ require([
     showCoordinates(view.center);
   });
 
-  //*** Add event to show mouse coordinates on click and move ***//
   view.on(["pointer-down", "pointer-move"], function (evt) {
     showCoordinates(view.toMap({ x: evt.x, y: evt.y }));
   });
 
   view.on(["click"], function (evt) {
-    //console.log("clicked event triggered");
 
     view.hitTest(evt).then(getGraphics);
 
     function getGraphics(response) {
-      //console.log(response.results.length);
+
       if (response.results.length) {
 
-        currentDepartment = response.results[0].graphic.atributos.departamen_1;
-        currentMunicipio = response.results[0].graphic.atributos.municipi_1;
+        currentDepartment = response.results[0].graphic.atributos.departamento;
+        currentMunicipio = response.results[0].graphic.atributos.municipio;
         currentMunicipioId = response.results[0].graphic.atributos.id;
-        //console.log(currentDepartment + " " + currentMunicipio);
         var titulo =
-          response.results[0].graphic.atributos.departamen_1 +
+          response.results[0].graphic.atributos.departamento +
           " , " +
-          response.results[0].graphic.atributos.municipi_1;
+          response.results[0].graphic.atributos.municipio;
 
-        url =
-        stamm  + "/getalertsdetail?id=" +
-          response.results[0].graphic.atributos.id;
-        esriRequest(url, options).then(function (response) {
-          //console.log(titulo);
-          var table = document.getElementById("tableInfo");
-          var tableTitle = document.getElementById("tableTitle");
-          tableTitle.innerHTML = titulo.toString();
-          table.innerHTML = "";
-          table.innerHTML =
-            "<thead>" +
-            "  <tr>" +
-            "   <th scope='col'>Fecha</th>" +
-            "   <th scope='col'>Descripcion</th>" +
-            "  </tr>" +
-            "</thead>  ";
-          for (var i = 0; i < response.data.length; i++) {
-            var atributos = ({
-              fecha,
-              textjson
-            } = response.data[i]);
-            //console.log(atributos);
+          console.log(titulo + ' ' + currentMunicipioId);
+          reporteCubo1();
 
-            //IM WEBSITE ANSEHEN
-            var row = table.insertRow(i + 1);
-            var cell0 = row.insertCell(0);
-            var cell1 = row.insertCell(1);
-            //var cell2 = row.insertCell(2);
-            //var cell3 = row.insertCell(3);
-            cell0.innerHTML = atributos.fecha;
-            cell1.innerHTML = atributos.textjson;
-            //cell2.innerHTML = atributos.ano;
-            //cell3.innerHTML = atributos.contador;
-            unhide("infoRegion");
-          }
-        });
       }
     }
   });

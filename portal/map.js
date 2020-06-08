@@ -8,7 +8,8 @@ var track;
 var currentDepartment;
 var currentMunicipio;
 var currentMunicipioId;
-
+//var stamm = "https://arcgis-web.url.edu.gt/incyt/api/sosguate";
+var stamm = "http://localhost:3000/incyt/api/sosguate";
 require([
   "esri/widgets/Track",
   "esri/views/MapView",
@@ -70,40 +71,44 @@ require([
     responseType: "json",
   };
 
-  /*
+  
   //Staadten detail Dienst addresse
-  url = "https://arcgis-web.url.edu.gt/incyt/api/sosagua/getdepartamentos";
+  url = stamm  + "/getdepartamentos";
   esriRequest(url, options).then(function (response) {
     this.departamentos = response.data;
     //console.log(this.departamentos);
   });
 
+  
   //Staadten detail Dienst addresse
-  url = "https://arcgis-web.url.edu.gt/incyt/api/sosagua/getmunicipios";
+  url = stamm  + "/getmunicipios";
   esriRequest(url, options).then(function (response) {
     this.municipios = response.data;
     //console.log(this.municipios);
   });
 
+  /*
   //Staadten detail Dienst addresse
   url = "https://arcgis-web.url.edu.gt/incyt/api/sosagua/getNecesidad";
   esriRequest(url, options).then(function (response) {
     this.necesidad = response.data;
     //console.log(this.necesidad);
   });
+*/
 
   //PUNKTE Dienst addresse
-  url = "https://arcgis-web.url.edu.gt/incyt/api/sosagua/getalertsmaster";
+  url = stamm  + "/getalertsmaster";
   esriRequest(url, options).then(function (response) {
     //TODO
     for (var i = 0; i < response.data.length; i++) {
       var atributos = ({
-        departamen_1,
-        municipi_1,
+        departamento,
+        municipio,
         point_x,
         point_y,
+        count
       } = response.data[i]);
-      //console.log(atributos);
+      console.log(atributos);
       createPoint(
         response.data[i].id,
         response.data[i].point_x,
@@ -113,7 +118,7 @@ require([
     }
   });
   //ENDE DES RESTS DIENST
-*/
+
   //MAP ANSICHT
   var coordsWidget = document.createElement("div");
   coordsWidget.id = "coordsWidget";
@@ -168,7 +173,7 @@ require([
           response.results[0].graphic.atributos.municipi_1;
 
         url =
-          "https://arcgis-web.url.edu.gt/incyt/api/sosagua/getalertsdetail?id=" +
+        stamm  + "/getalertsdetail?id=" +
           response.results[0].graphic.atributos.id;
         esriRequest(url, options).then(function (response) {
           //console.log(titulo);
@@ -179,19 +184,14 @@ require([
           table.innerHTML =
             "<thead>" +
             "  <tr>" +
+            "   <th scope='col'>Fecha</th>" +
             "   <th scope='col'>Descripcion</th>" +
-            "   <th scope='col'>Mes</th>" +
-            "   <th scope='col'>Año</th>" +
-            "   <th scope='col'>Numero de Avisos</th>" +
             "  </tr>" +
             "</thead>  ";
           for (var i = 0; i < response.data.length; i++) {
             var atributos = ({
-              id,
-              descripcion,
-              mes,
-              ano,
-              contador,
+              fecha,
+              textjson
             } = response.data[i]);
             //console.log(atributos);
 
@@ -199,12 +199,12 @@ require([
             var row = table.insertRow(i + 1);
             var cell0 = row.insertCell(0);
             var cell1 = row.insertCell(1);
-            var cell2 = row.insertCell(2);
-            var cell3 = row.insertCell(3);
-            cell0.innerHTML = atributos.descripcion;
-            cell1.innerHTML = atributos.mes;
-            cell2.innerHTML = atributos.ano;
-            cell3.innerHTML = atributos.contador;
+            //var cell2 = row.insertCell(2);
+            //var cell3 = row.insertCell(3);
+            cell0.innerHTML = atributos.fecha;
+            cell1.innerHTML = atributos.textjson;
+            //cell2.innerHTML = atributos.ano;
+            //cell3.innerHTML = atributos.contador;
             unhide("infoRegion");
           }
         });

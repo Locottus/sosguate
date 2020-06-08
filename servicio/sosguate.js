@@ -22,7 +22,7 @@ app.get('/incyt/api/sosagua', (request, response) => {
 })
 
 app.get('/incyt/api/sosguate/getalertsmaster', db.getAlertsMaster)
-app.get('/incyt/api/sosguate/getalertsdetail', db.getAlertsDetail)
+//app.get('/incyt/api/sosguate/getalertsdetail', db.getAlertsDetail)
 app.get('/incyt/api/sosguate/getalertsdetailreport', db.getAlertsDetailReport)
 app.get('/incyt/api/sosguate/getdepartamentos', db.getDepartamentos)
 app.get('/incyt/api/sosguate/getmunicipios', db.getMunicipios)

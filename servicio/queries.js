@@ -13,20 +13,20 @@ const pool = new Pool({
   database: 'sosguate',
   password: 'Guatemala1',
   port: 5432,
-})
+});
 
 
 
 const getAlertsMaster = (request, response) => {
-  //select departamen_1, municipi_1, point_x, point_y ,n.descripcion from cubo1 c, municipios m, necesidad n where m.id = c.municipio and n.id = c.necesidad
-  pool.query('select distinct m.id, departamen_1, municipi_1, point_x, point_y from cubo1 c, municipios m where m.id = c.municipio ', (error, results) => {
+  // select m.departamento,m.municipio,m.point_x,m.point_y,count(*) from sosguate s, municipios m where s.municipio = m.id group by m.departamento,m.municipio,m.point_x,m.point_y
+  pool.query(' select m.departamento,m.municipio,m.point_x,m.point_y,count(*) from sosguate s, municipios m where s.municipio = m.id group by m.departamento,m.municipio,m.point_x,m.point_y ', (error, results) => {
     if (error) {
       //throw error
       response.status(500).send(`{'msg':'error'}`);
     }
     console.log('#SOSAGUA GET Method cubo1');
-    response.status(200).json(results.rows)
-  })
+    response.status(200).json(results.rows);
+  });
 }
 
 const getDepartamentos = (request, response) => {
@@ -36,8 +36,8 @@ const getDepartamentos = (request, response) => {
       response.status(500).send(`{'msg':'error'}`);
     }
     console.log('#SOSAGUA GET Method departamentos');
-    response.status(200).json(results.rows)
-  })
+    response.status(200).json(results.rows);
+  });
 }
 
 const getMunicipios = (request, response) => {
@@ -47,8 +47,8 @@ const getMunicipios = (request, response) => {
       response.status(500).send(`{'msg':'error'}`);
     }
     console.log('#SOSGUATE GET Method Municipios');
-    response.status(200).json(results.rows)
-  })
+    response.status(200).json(results.rows);
+  });
 }
 
 
@@ -59,8 +59,8 @@ const getNecesidad = (request, response) => {
       response.status(500).send(`{'msg':'error'}`);
     }
     console.log('#SOSAGUA GET Method SOS');
-    response.status(200).json(results.rows)
-  })
+    response.status(200).json(results.rows);
+  });
 }
 
 
@@ -76,32 +76,37 @@ const createAlerts = (request, response) => {
     }
     //response.status(201).send(`User added with ID: ${results.body}`);
     response.status(201).send(`{'msg':'OK'}`);
-  })
+  });
 }
 
+/*
 const getAlertsDetail = (request, response) => {
-  const id = request.query.id;
-  pool.query('select n.*, c.mes, c.ano, c.contador from cubo1 c, necesidad n where c.necesidad = n.id and c.municipio = ' + id + ' order by mes, ano,necesidad,c.contador ', (error, results) => {
+  var id = request.query.id;
+  var q = 'select * from sosguate where municipio =  ' + id + ' order by fecha ';
+  console.log(q);
+  pool.query(q, (error, results) => {
     if (error) {
       //throw error
       response.status(500).send(`{'msg':'error'}`);
     }
     //console.log('se han enviado todos los mensajes');
-    response.status(200).json(results.rows)
-  })
+    response.status(200).json(results.rows);
+  });
 }
-
+*/
 
 const getAlertsDetailReport = (request, response) => {
-  const id = request.query.id;
-  pool.query('select textjson from fase1 where municipio = ' + id + '  ', (error, results) => {
+  var id = request.query.id;
+  var q =  'select textjson from sosguate where municipio = ' + id ;
+  console.log(q);
+  pool.query(q, (error, results) => {
     if (error) {
       //throw error
       response.status(500).send(`{'msg':'error'}`);
     }
     //console.log('se han enviado todos los mensajes');
-    response.status(200).json(results.rows)
-  })
+    response.status(200).json(results.rows);
+  });
 }
 
 
@@ -110,7 +115,7 @@ module.exports = {
   getDepartamentos,
   getMunicipios,
   getNecesidad,
-  getAlertsDetail,
+  //getAlertsDetail,
   createAlerts,
   getAlertsDetailReport
 }

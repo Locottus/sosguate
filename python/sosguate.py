@@ -314,6 +314,9 @@ def msgDiarios(fecha):
     for row in rows:
         s = convUTF8(row[0]).upper()
         n = searchMunicipios(s)
+
+        js = json.loads(row[0])#***************************************************************************************************
+
         ejecutaComandoPsql("insert into sosguate(textjson,municipio) values ('" + row[0] + "','" + str(n) + "') ")
     conn.close()
 

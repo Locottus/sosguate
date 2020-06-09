@@ -69,7 +69,6 @@ const getNecesidad = (request, response) => {
 }
 
 
-
 const createAlerts = (request, response) => {
       var jtxt = JSON.stringify(request.body);
       var points = request.body.coordinates.toString().replace(']',"").replace('[',"").split(',');
@@ -109,7 +108,11 @@ const getAlertsDetail = (request, response) => {
 
 const getAlertsDetailReport = (request, response) => {
   var id = request.query.id;
-  var q =  'select * from sosguate where municipio = ' + id ;
+  var q =  "select fecha, cast(textjson AS json)->>'text' ,municipio, from sosguate where municipio = " + id +
+  " union " + 
+  " select fecha, cast(textjson AS json)->>'text' ,municipioid from sosguateportal "
+  ;
+
   console.log(q);
   pool.query(q, (error, results) => {
     if (error) {

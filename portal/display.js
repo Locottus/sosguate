@@ -108,19 +108,19 @@ function postData(){
       '"retweet_count":"'  +  Date.now() +  '",' +
       '"text":"'  +           document.getElementById("txt").value.toString().replace("'"," ").replace('"'," ") +  '",' +
       '"location":["' + document.getElementById("selectDepartamento").value + '","' + document.getElementById("selectMunicipio").value + '"],' +
-      '"coordinates":" [' + x.toString() + "," + y.toString() +"]"  + '",' +
+      '"coordinates":" [' + x.toString().replace(" ","") + "," + y.toString().replace(" ","") +"]"  + '",' +
       '"geo_enabled":"'  +      accuLocation  +  '",' +
       '"geo":"'  +      accuLocation  +  '",' +
       '"created_at":"'  +      Date.now() +  '",' +
       '"favorite_count":"'  +  Date.now() +  '",' +
-      '"hashtags": [' + '"#SOSAGUAGT,#AGUAGT,#SINAGUAGT","'  + document.getElementById("selectNecesidad").value + '"],' +
+      '"hashtags": ["' + document.getElementById("selectNecesidad").value + '"],' +
       '"status_count":"'  +  Date.now() +  '",' +
       '"place": ["' + document.getElementById("selectDepartamento").value + '","' +document.getElementById("selectMunicipio").value + '"],' +
       '"source":"'  +         src + '",' +
       '"locationId":"'  +     mId + '",' +
       '"necesidadId":"'  +    nId + '"}' ;
 
-    //console.log(template);
+    console.log(template);
   
   if (document.getElementById("txt").value.length > 0 && document.getElementById("email").value.length > 0 && document.getElementById("nombre").value.length > 0){
     $.post(url, JSON.parse(template), function(response){ 

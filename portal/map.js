@@ -87,14 +87,14 @@ require([
     //console.log(this.municipios);
   });
 
-  /*
+  
   //Staadten detail Dienst addresse
-  url = "https://arcgis-web.url.edu.gt/incyt/api/sosagua/getNecesidad";
+  url = stamm + "/getNecesidad";
   esriRequest(url, options).then(function (response) {
     this.necesidad = response.data;
     //console.log(this.necesidad);
   });
-*/
+
 
   //PUNKTE Dienst addresse
   url = stamm  + "/getalertsmaster";

@@ -34,7 +34,19 @@ create table public.sosguate(
 	fecha timestamp without time zone primary key DEFAULT now(),
 	textjson text not null unique ,
 	municipio numeric null
-)
+);
+
+create table public.sosguateportal(
+	fecha timestamp without time zone primary key DEFAULT now(),
+	textjson text not null unique ,
+	departamento text null,
+	municipio text null,
+	pointx text null,
+  pointy text null,
+  municipioid numeric null
+
+);
+
 
 CREATE TABLE public.municipios
 (
@@ -54,25 +66,11 @@ CREATE TABLE public.municipios
   point_y text
 );
 
-CREATE TABLE public.necesidad
-(
-  id serial NOT NULL primary key
-  descripcion text NOT NULL unique
-);
 
-
-CREATE TABLE public.cubo1
-(
-  municipio numeric NOT NULL,
-  necesidad numeric NOT NULL,
-  mes text,
-  ano text,
-  contador numeric
-);
 
 insert into proyecto (NOMBRE) VALUES ('#SOSGUATE');
 
-insert into tendencias (proyecto,tendencia,descripcion) values (1,'SOSAGUA','PROYECTO INCYT S.O.S AGUA GT');
+insert into tendencias (proyecto,tendencia,descripcion) values (1,'SOSAGUA','S.O.S AGUA GT');
 
 
 insert into hashtags (descripcion) values ('#SOSGUATE');

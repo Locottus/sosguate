@@ -125,7 +125,7 @@ function postData(){
   if (document.getElementById("txt").value.length > 0 && document.getElementById("email").value.length > 0 && document.getElementById("nombre").value.length > 0){
     $.post(url, JSON.parse(template), function(response){ 
       if ("{'msg':'OK'}" === response){
-        alert("la informacion ha sido enviada, espere 24 horas a que sea procesada para que pueda ser vista en nuestro sistema. " );
+        alert("La informacion ha sido enviada. " );
         document.getElementById("email").value = "";
         document.getElementById("nombre").value = "";
         document.getElementById("txt").value = "";

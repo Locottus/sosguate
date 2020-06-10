@@ -70,16 +70,24 @@ const getNecesidad = (request, response) => {
 
 
 const createAlerts = (request, response) => {
+      var source = request.body.source;
       var jtxt = JSON.stringify(request.body);
-      var points = request.body.coordinates.toString().replace(']',"").replace('[',"").split(',');
-      var place = request.body.place.toString().replace(']',"").replace('[',"").split(',');
-      var municipioid = request.body.locationId;
+      var cadena = "";
+      if (source === 'Web Page'){
+        
+        var points = request.body.coordinates.toString().replace(']',"").replace('[',"").split(',');
+        var place = request.body.place.toString().replace(']',"").replace('[',"").split(',');
+        var municipioid = request.body.locationId;
+  
+        cadena = "insert into sosguateportal (textjson,pointx,pointy,municipioid,departamento,municipio) values  ('" +
+        jtxt  +  "','" + points[0] + "','" + points[1] +  "','" + municipioid + "','"+
+        place[0] + "','" + place[1] +  "' )"  ;
+      }else{
+        cadena = "insert into fase1 (textjson) values ('" + jtxt + "')"//Netzwerk  
+      }
       //console.log(points[0],points[1]);
       //var {textjson,pointx,pointy,municipio} = request.body;      
       //console.log(jtxt);
-    var cadena = "insert into sosguateportal (textjson,pointx,pointy,municipioid,departamento,municipio) values  ('" +
-      jtxt  +  "','" + points[0] + "','" + points[1] +  "','" + municipioid + "','"+
-      place[0] + "','" + place[1] +  "' )"  ;
     console.log(cadena);
   pool.query(cadena, (error, results) => {
     if (error) {
@@ -108,9 +116,9 @@ const getAlertsDetail = (request, response) => {
 
 const getAlertsDetailReport = (request, response) => {
   var id = request.query.id;
-  var q =  "select fecha, cast(textjson AS json)->>'text' ,municipio, from sosguate where municipio = " + id +
+  var q =  "select fecha, cast(textjson AS json)->>'text' as text ,municipio from sosguate where cast(textjson AS json)->>'text' is not null and municipio = " + id +
   " union " + 
-  " select fecha, cast(textjson AS json)->>'text' ,municipioid from sosguateportal "
+  " select fecha, cast(textjson AS json)->>'text' as text,municipioid from sosguateportal where cast(textjson AS json)->>'text' is not null and municipioid = " + id
   ;
 
   console.log(q);

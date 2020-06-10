@@ -4,7 +4,7 @@ import pandas as pd
 
 
 
-f = open("sosagua.txt", "a")
+f = open("sosguate.txt", "a")
 #connstr para bd
 #dev str
 conn_string = "host='localhost' dbname='sosguate' user='postgres' password='Guatemala1'"
@@ -97,8 +97,8 @@ class msg:
 
 
 def postMethod(objeto):
-    #url = "http://localhost:3000/incyt/api/sosagua/createalerts"
-    url = "https://arcgis-web.url.edu.gt/incyt/api/sosagua/createalerts"
+    url = "http://localhost:3000/incyt/api/sosguate/createalerts"
+    #url = "https://arcgis-web.url.edu.gt/incyt/api/sosguate/createalerts"
     headers = {'content-type': 'application/json'}
     response = requests.post(url, data = json.dumps(objeto), headers=headers)
     
@@ -351,18 +351,21 @@ if __name__ == "__main__":
   write(fecha)
 
   write("FASE 1.0 --> CONECTANDO A TWITTER PARA EXTRAER TWITS DEL DIA")
+
+  write("adquiriendo SMS")
+  insertSMS(getDataSMS(fecha))
+
   
   for x in hashtags:
       write(x)
       try:
           getTweets(x,str(fecha),nTwits)
+          print(x)
       except:
           write("error en for de los hashtags, se procede a las fases")
 
-  write("adquiriendo SMS")
-  insertSMS(getDataSMS(fecha))
   
-  query = "select textjson from fase1 where fecha > '" + str(fecha) + " 00:00:00' "
+  #query = "select textjson from fase1 where fecha > '" + str(fecha) + " 00:00:00' "
   
   f.close()
   

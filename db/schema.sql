@@ -31,7 +31,7 @@ CREATE TABLE public.fase1
 );
 
 create table public.sosguate(
-	fecha timestamp without time zone primary key DEFAULT now(),
+	fecha timestamp without time zone primary key  references fase1(fecha),
 	textjson text not null unique ,
 	municipio numeric null
 );
@@ -81,9 +81,9 @@ insert into hashtags (descripcion) values ('#SINAGUAGT');
 
 
 
-insert into hashtags_tendencias(hashtag,tendencia)values (1,3);
-insert into hashtags_tendencias(hashtag,tendencia)values (1,4);
-insert into hashtags_tendencias(hashtag,tendencia)values (1,5);
+--insert into hashtags_tendencias(hashtag,tendencia)values (1,3);
+--insert into hashtags_tendencias(hashtag,tendencia)values (1,4);
+--insert into hashtags_tendencias(hashtag,tendencia)values (1,5);
 
 
 

@@ -1,55 +1,96 @@
-getting hashtags
 *************************************************************
 2020-06-09
-FASE 1.0 --> CONECTANDO A TWITTER PARA EXTRAER TWITS DEL DIA
+FASE 1.0 --> CONECTANDO A TWITTER PARA EXTRAER TWITS Y SMS DEL DIA
 adquiriendo SMS
-getting hashtags
+adquiriendo twitts
+#covid19
+un json viene malformado
+un json viene malformado
+un json viene malformado
+un json viene malformado
+un json viene malformado
 *************************************************************
 2020-06-09
-FASE 1.0 --> CONECTANDO A TWITTER PARA EXTRAER TWITS DEL DIA
+FASE 1.0 --> CONECTANDO A TWITTER PARA EXTRAER TWITS Y SMS DEL DIA
+adquiriendo SMS
+adquiriendo twitts
+#covid19
+getTweets error
+*************************************************************
+2020-06-09
+FASE 1.0 --> CONECTANDO A TWITTER PARA EXTRAER TWITS Y SMS DEL DIA
+adquiriendo SMS
+adquiriendo twitts
+#covid19
+getTweets error
+*************************************************************
+2020-06-09
+FASE 1.0 --> CONECTANDO A TWITTER PARA EXTRAER TWITS Y SMS DEL DIA
+adquiriendo SMS
+adquiriendo twitts
+#covid19
+error en for de los hashtags, se procede a las fases
+*************************************************************
+2020-06-09
+FASE 1.0 --> CONECTANDO A TWITTER PARA EXTRAER TWITS Y SMS DEL DIA
+adquiriendo SMS
+adquiriendo twitts
+#traficogt
+error en for de los hashtags, se procede a las fases
+*************************************************************
+2020-06-09
+FASE 1.0 --> CONECTANDO A TWITTER PARA EXTRAER TWITS Y SMS DEL DIA
+adquiriendo SMS
+adquiriendo twitts
+#traficogt
+un json viene malformado
+un json viene malformado
+un json viene malformado
+un json viene malformado
+un json viene malformado
+*************************************************************
+2020-06-09
+FASE 1.0 --> CONECTANDO A TWITTER PARA EXTRAER TWITS Y SMS DEL DIA
+adquiriendo SMS
+adquiriendo twitts
+#traficogt
+*************************************************************
+2020-06-09
+FASE 1.0 --> CONECTANDO A TWITTER PARA EXTRAER TWITS Y SMS DEL DIA
+adquiriendo SMS
+adquiriendo twitts
+#traficogt
+getting hashtags
+error en ejecutar comando psql
+error en ejecutar comando psql
+error en ejecutar comando psql
+error en ejecutar comando psql
+error en ejecutar comando psql
+error en ejecutar comando psql
+error en ejecutar comando psql
+error en ejecutar comando psql
+error en ejecutar comando psql
+error en ejecutar comando psql
+error en ejecutar comando psql
+error en ejecutar comando psql
+error en ejecutar comando psql
+error en ejecutar comando psql
+error en ejecutar comando psql
+*************************************************************
+2020-06-09
+FASE 1.0 --> CONECTANDO A TWITTER PARA EXTRAER TWITS Y SMS DEL DIA
+adquiriendo SMS
+adquiriendo twitts
 #AGUAGT
 #SOSAGUAGT
 #SINAGUAGT
 #SOSGUATE
 #SOSGUATEMALA
-adquiriendo SMS
 getting hashtags
 *************************************************************
 2020-06-09
-FASE 1.0 --> CONECTANDO A TWITTER PARA EXTRAER TWITS DEL DIA
-adquiriendo SMS
-#AGUAGT
-#SOSAGUAGT
-#SINAGUAGT
-#SOSGUATE
-#SOSGUATEMALA
+FASE 1.0 --> CONECTANDO A TWITTER PARA EXTRAER TWITS Y SMS DEL DIA
 getting hashtags
 *************************************************************
 2020-06-09
-FASE 1.0 --> CONECTANDO A TWITTER PARA EXTRAER TWITS DEL DIA
-adquiriendo SMS
-#AGUAGT
-#SOSAGUAGT
-#SINAGUAGT
-#SOSGUATE
-#SOSGUATEMALA
-getting hashtags
-*************************************************************
-2020-06-09
-FASE 1.0 --> CONECTANDO A TWITTER PARA EXTRAER TWITS DEL DIA
-adquiriendo SMS
-#AGUAGT
-#SOSAGUAGT
-#SINAGUAGT
-#SOSGUATE
-#SOSGUATEMALA
-getting hashtags
-*************************************************************
-2020-06-09
-FASE 1.0 --> CONECTANDO A TWITTER PARA EXTRAER TWITS DEL DIA
-adquiriendo SMS
-#AGUAGT
-#SOSAGUAGT
-#SINAGUAGT
-#SOSGUATE
-#SOSGUATEMALA
+FASE 1.0 --> CONECTANDO A TWITTER PARA EXTRAER TWITS Y SMS DEL DIA

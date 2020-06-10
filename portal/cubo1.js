@@ -40,7 +40,7 @@ function fillTable(data) {
   console.log(data)
   for (var i = 0; i < data.length; i++) {
     //console.log(data);
-    var atributos = ({ fecha,textjson } = data[i]);
+    var atributos = ({ fecha,text } = data[i]);
     var myDate;
 
     /*if(isNaN(atributos.created_at)){
@@ -61,7 +61,7 @@ function fillTable(data) {
     //var cell2 = row.insertCell(2);
     //var cell3 = row.insertCell(3);
     cell0.innerHTML = atributos.fecha;
-    cell1.innerHTML = atributos.textjson;
+    cell1.innerHTML = atributos.text;
     //cell2.innerHTML = myDate;//atributos.created_at;
     //cell3.innerHTML = atributos.source;
   }

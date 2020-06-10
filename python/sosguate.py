@@ -2,8 +2,6 @@ import tweepy, psycopg2, os, json, datetime, sys, requests, time
 import pandas as pd
 
 
-
-
 f = open("sosguate.txt", "a")
 #connstr para bd
 #dev str
@@ -35,37 +33,6 @@ cfg = {
   "access_token"        : "1432847989-W3qw9szAWWP0VxsPpEsvVZX6igJjrVJzUZrrgYY",
   "access_token_secret" : "332CPmsifvklzEK33F99flSAde5zz71fCiaz4V1P6qYIs" 
   }
-
-#****************************************FASE 1 *******************************************
-
-'''
-
-update pg_database set encoding=8 where datname='sosagua';
-update pg_database set encoding = pg_char_to_encoding('UTF8') where datname = 'sosagua'
-	
-create table public.fase1(
-	fecha timestamp without time zone primary key DEFAULT now(),
-	textjson text not null ,
-)
-
-
-create table public.sosguate(
-	fecha timestamp without time zone primary key DEFAULT now(),
-	textjson text not null ,
-	municipio numeric null
-)
-
-
-
-create table cubo1(
-	municipio numeric not null,
-	necesidad numeric not null,
-	mes	text	 null,
-	ano text	 null,
-	contador numeric  null
-)
-
-'''
 
 
 #instalar el paquete de la siguiente forma:  pip install tweepi
@@ -150,6 +117,7 @@ def getTweets(search_words,date_since,number):
                             "locationId":      0,
                             "necesidadId":     0
                         }
+            print(mined)
             postMethod(mined)
         except:
             write("un json viene malformado")
@@ -159,13 +127,13 @@ def getTweets(search_words,date_since,number):
 
 def getProcessDate():
     try:
-
         from datetime import date
         today = date.today()
         yesterday = today - datetime.timedelta(days=1)
         return yesterday
     except:
         write("error en getProcessDate")
+
         
 def convUTF8(cadena):
     try:
@@ -174,25 +142,6 @@ def convUTF8(cadena):
         return cadena
 
 
-#****************************FASE 2******************************************
-
-'''
-
-create table public.necesidad(
-        id SERIAL PRIMARY KEY,
-	descripcion text not null
-	
-);
-
-create table public.sinonimos(
-        necesidad numeric,
-        sinonimo text not null unique
-	
-);
-
-
-
-'''
 
 def write(cadena):
     try:
@@ -235,6 +184,7 @@ def getLocation():
     except:
         write("error en getLocation")
 
+
 def ejecutaComandoPsql(query):
     try:
         #print(query)
@@ -245,6 +195,7 @@ def ejecutaComandoPsql(query):
         conn.close()
     except:
         write("error en ejecutar comando psql")
+
 
 def searchHashtag(message):
     message = message.upper()
@@ -304,20 +255,20 @@ def municipios():
     return m
 
 def msgDiarios(fecha):
-    query = "select textjson from fase1 where fecha > '" + str(fecha) + " 00:00:00' "
-    print(fecha)
+    query = "select fecha, textjson from fase1 where fecha > '" + str(fecha) + " 00:00:00' "
+    #print(fecha)
     print(query)
     conn = psycopg2.connect(conn_string)
     cursor = conn.cursor()
     cursor.execute(query)
     rows = cursor.fetchall()
     for row in rows:
-        s = convUTF8(row[0]).upper()
+        s = convUTF8(row[1]).upper()
         n = searchMunicipios(s)
 
-        js = json.loads(row[0])#***************************************************************************************************
+        #js = json.loads(row[1])#***************************************************************************************************
 
-        ejecutaComandoPsql("insert into sosguate(textjson,municipio) values ('" + row[0] + "','" + str(n) + "') ")
+        ejecutaComandoPsql("insert into sosguate(fecha,textjson,municipio) values ('" + str(row[0]) + "','" + row[1] + "','" +  str(n) + "') ")
     conn.close()
 
 
@@ -334,14 +285,10 @@ def searchMunicipios(message):
 
 
 
-
 nombreMunicipios = municipios()
-nTwits = 50000
+nTwits = 15
 fecha = getProcessDate()
 hashtags = getHashtags()
-msgDiarios(fecha)#le pone localidad al aviso
-
-
 
 
 
@@ -350,27 +297,29 @@ if __name__ == "__main__":
   write("*************************************************************")
   write(fecha)
 
-  write("FASE 1.0 --> CONECTANDO A TWITTER PARA EXTRAER TWITS DEL DIA")
+  write("FASE 1.0 --> CONECTANDO A TWITTER PARA EXTRAER TWITS Y SMS DEL DIA")
 
+  
   write("adquiriendo SMS")
   insertSMS(getDataSMS(fecha))
 
-  
+  write("adquiriendo twitts")
   for x in hashtags:
       write(x)
       try:
           getTweets(x,str(fecha),nTwits)
-          print(x)
       except:
           write("error en for de los hashtags, se procede a las fases")
 
-  
-  #query = "select textjson from fase1 where fecha > '" + str(fecha) + " 00:00:00' "
+
+  msgDiarios(fecha)#le pone localidad al aviso
+
   
   f.close()
-  
-  
+
   '''
+
+  
   write('FASE 1.2 --> AGREGANDO COORDENADAS DE MUNICIPIOS AL QUERY')
   query = "update fase1  set municipio = m1.id from  municipios m1 where lower(fase1.textjson) like '%' || lower(m1.departamen_1) || '%' and fase1.municipio = 0  and fase1.fecha > '" + str(fecha) + " 00:00:00' "
   ejecutaComandoPsql(query)

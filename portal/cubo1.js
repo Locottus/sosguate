@@ -3,8 +3,8 @@ function reporte(id) {
   //console.log(currentDepartment + ' ' + currentMunicipio + ' ' +currentMunicipioId);
 
 
-  //var stamm = "https://arcgis-web.url.edu.gt/incyt/api/sosguate";
-  var stamm = "http://localhost:3000/incyt/api/sosguate";
+  var stamm = "https://arcgis-web.url.edu.gt/incyt/api/sosguate";
+  //var stamm = "http://localhost:3000/incyt/api/sosguate";
 
   var url =
     stamm + "/getalertsdetailreport" +

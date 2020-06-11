@@ -5,12 +5,12 @@ import pandas as pd
 f = open("sosguate.txt", "a")
 #connstr para bd
 #dev str
-conn_string = "host='localhost' dbname='sosguate' user='postgres' password='Guatemala1'"
+#conn_string = "host='localhost' dbname='sosguate' user='postgres' password='Guatemala1'"
 
 
 
 #produccion str
-#conn_string = "host='localhost' dbname='sosguate' user='postgres' password='postgres2020!Incyt'"
+conn_string = "host='localhost' dbname='sosguate' user='postgres' password='postgres2020!Incyt'"
 
 
 
@@ -64,8 +64,8 @@ class msg:
 
 
 def postMethod(objeto):
-    url = "http://localhost:3000/incyt/api/sosguate/createalerts"
-    #url = "https://arcgis-web.url.edu.gt/incyt/api/sosguate/createalerts"
+    #url = "http://localhost:3000/incyt/api/sosguate/createalerts"
+    url = "https://arcgis-web.url.edu.gt/incyt/api/sosguate/createalerts"
     headers = {'content-type': 'application/json'}
     response = requests.post(url, data = json.dumps(objeto), headers=headers)
     

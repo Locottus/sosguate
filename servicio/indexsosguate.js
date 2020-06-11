@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const db = require('./queriessosguate');
-const port = 3000;
+const port = 3004;
 
 app.use(bodyParser.json())
 app.use(

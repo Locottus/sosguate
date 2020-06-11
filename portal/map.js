@@ -8,8 +8,8 @@ var track;
 var currentDepartment;
 var currentMunicipio;
 var currentMunicipioId;
-//var stamm = "https://arcgis-web.url.edu.gt/incyt/api/sosguate";
-var stamm = "http://localhost:3000/incyt/api/sosguate";
+var stamm = "https://arcgis-web.url.edu.gt/incyt/api/sosguate";
+//var stamm = "http://localhost:3000/incyt/api/sosguate";
 require([
   "esri/widgets/Track",
   "esri/views/MapView",

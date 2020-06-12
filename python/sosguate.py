@@ -247,7 +247,7 @@ def municipios():
     m = []
     conn = psycopg2.connect(conn_string)
     cursor = conn.cursor()
-    cursor.execute('select id, municipi_1 from municipios ')
+    cursor.execute('select id, municipi_1 from municipios union select id, departamen_1 from municipios ')
     rows = cursor.fetchall()
     for row in rows:
         m.append([row[0],row[1].upper()])
